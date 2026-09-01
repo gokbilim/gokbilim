@@ -2,6 +2,16 @@ import { glob } from "astro/loaders";
 import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 
+const haberler = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    pubDate: z.coerce.date(),
+    importance: z.string().optional(),
+    image: z.string().optional(),
+  }),
+});
+
 const blog = defineCollection({
 	// Load Markdown and MDX files in the `src/content/blog/` directory.
 	loader: glob({ base: "./src/content/blog", pattern: "**/*.{md,mdx}" }),
