@@ -6,56 +6,100 @@ const sonHaberler = butunHaberler.sort((a, b) => b.data.pubDate.valueOf() - a.da
 ---
 
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gokbilim.net</title>
+    <title>gokbilim.net - Evrenin Derinlikleri</title>
   </head>
-  <body style="background-color: #0a0e17; color: #e0e6ed; font-family: sans-serif; margin: 0; padding: 0;">
-    <main style="max-width: 900px; margin: 0 auto; padding: 2rem;">
+  <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
+    
+    <!-- Üst Gezinme ve Kahraman (Hero) Alanı -->
+    <header class="max-w-6xl mx-auto px-6 py-16 text-center">
+      <div class="flex justify-center mb-8">
+        <!-- Logo için ayrılan alan. Logonun dosya adını ve uzantısını buraya göre ayarlayabilirsin -->
+        <img src="/images/logo.jpg" alt="gokbilim.net Logo" class="h-32 w-auto rounded-full shadow-[0_0_30px_rgba(245,158,11,0.2)]" />
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-100 tracking-tight mb-4">
+        <span class="text-amber-500">gokbilim</span>.net
+      </h1>
+      <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+        Evrenin derinliklerine dair güncel gelişmeler, astronomi tarihi ve gözlem etkinlikleri.
+      </p>
+    </header>
+
+    <!-- Ana İçerik -->
+    <main class="max-w-6xl mx-auto px-6 pb-24">
       
-      <header style="text-align: center; margin-bottom: 3rem;">
-        <h1 style="color: #d4af37;">gokbilim.net</h1>
-        <p>Evrenin derinliklerine dair güncel gelişmeler ve tarihsel keşifler.</p>
-      </header>
-
-      <section id="haberler">
-        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Güncel Haberler</h2>
-        <ul style="list-style: none; padding: 0;">
+      <!-- Haberler Bölümü -->
+      <section id="haberler" class="mb-20">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-8">
+          <h2 class="text-2xl md:text-3xl font-semibold text-slate-100">Güncel Haberler</h2>
+          <a href="#" class="text-sm text-amber-500 hover:text-amber-400 transition-colors">Tümünü Gör &rarr;</a>
+        </div>
+        
+        <!-- Haber Kartları Izgarası (Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sonHaberler.map((haber) => (
-            <li style="background: #111827; margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 8px;">
-              <article>
-                {haber.data.image && <img src={haber.data.image} alt={haber.data.title} style="max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 1rem;" />}
-                <h3 style="margin-top: 0; color: #60a5fa;">{haber.data.title}</h3>
-                {haber.data.importance && <p style="color: #fb923c;"><strong>Neden Önemli:</strong> {haber.data.importance}</p>}
-                <p>{haber.body}</p>
-              </article>
-            </li>
+            <article class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] group flex flex-col">
+              {haber.data.image ? (
+                <div class="aspect-video overflow-hidden bg-slate-800">
+                  <img src={haber.data.image} alt={haber.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+              ) : (
+                <div class="aspect-video bg-slate-800 flex items-center justify-center">
+                  <span class="text-slate-600">Görsel Yok</span>
+                </div>
+              )}
+              
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-amber-500 transition-colors">
+                  {haber.data.title}
+                </h3>
+                {haber.data.importance && (
+                  <div class="bg-amber-950/30 border-l-2 border-amber-500 p-3 mb-4 rounded-r-md">
+                    <p class="text-sm text-amber-400"><strong>Neden Önemli:</strong> {haber.data.importance}</p>
+                  </div>
+                )}
+                <p class="text-slate-400 text-sm line-clamp-3 mb-4 flex-grow">
+                  {haber.body.substring(0, 150)}...
+                </p>
+                <div class="text-xs text-slate-500 pt-4 border-t border-slate-800 mt-auto">
+                  {new Date(haber.data.pubDate).toLocaleDateString('tr-TR')}
+                </div>
+              </div>
+            </article>
           ))}
-        </ul>
+        </div>
       </section>
 
-      <section id="gozlemevleri" style="margin-top: 3rem;">
-        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Türkiye'deki Gözlemevleri</h2>
-        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-      </section>
+      <!-- Diğer Bölümler (Şimdilik Yer Tutucu) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <section id="gozlemevleri" class="bg-slate-900/50 p-8 rounded-2xl border border-slate-800 border-dashed">
+          <h2 class="text-xl font-semibold text-slate-200 mb-2">Türkiye'deki Gözlemevleri</h2>
+          <p class="text-slate-500 text-sm">İçerikler CMS üzerinden eklendikçe burada listelenecektir.</p>
+        </section>
 
-      <section id="etkinlikler" style="margin-top: 3rem;">
-        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Gözlem Etkinlikleri</h2>
-        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-      </section>
+        <section id="etkinlikler" class="bg-slate-900/50 p-8 rounded-2xl border border-slate-800 border-dashed">
+          <h2 class="text-xl font-semibold text-slate-200 mb-2">Gözlem Etkinlikleri</h2>
+          <p class="text-slate-500 text-sm">İçerikler CMS üzerinden eklendikçe burada listelenecektir.</p>
+        </section>
 
-      <section id="haftanin-fotografi" style="margin-top: 3rem;">
-        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Haftanın Fotoğrafı</h2>
-        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-      </section>
+        <section id="haftanin-fotografi" class="bg-slate-900/50 p-8 rounded-2xl border border-slate-800 border-dashed">
+          <h2 class="text-xl font-semibold text-slate-200 mb-2">Haftanın Fotoğrafı</h2>
+          <p class="text-slate-500 text-sm">İçerikler CMS üzerinden eklendikçe burada listelenecektir.</p>
+        </section>
 
-      <section id="tarih" style="margin-top: 3rem; margin-bottom: 4rem;">
-        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Gökbilim Tarihi</h2>
-        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-      </section>
+        <section id="tarih" class="bg-slate-900/50 p-8 rounded-2xl border border-slate-800 border-dashed">
+          <h2 class="text-xl font-semibold text-slate-200 mb-2">Gökbilim Tarihi</h2>
+          <p class="text-slate-500 text-sm">İçerikler CMS üzerinden eklendikçe burada listelenecektir.</p>
+        </section>
+      </div>
 
     </main>
+    
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+      <p>&copy; {new Date().getFullYear()} gokbilim.net - Tüm hakları saklıdır.</p>
+    </footer>
   </body>
 </html>
