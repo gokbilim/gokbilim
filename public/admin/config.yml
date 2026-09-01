@@ -15,6 +15,7 @@ collections:
     fields:
       - {label: "Başlık", name: "title", widget: "string"}
       - {label: "Tarih", name: "pubDate", widget: "datetime"}
+      - {label: "Neden Önemli", name: "importance", widget: "text"}
       - {label: "Görsel", name: "image", widget: "image", required: false}
       - {label: "İçerik", name: "body", widget: "markdown"}
 
