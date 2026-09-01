@@ -2,6 +2,7 @@ backend:
   name: github
   repo: gokbilim/gokbilim
   branch: main
+  base_url: https://decap-oauth.ozgucbayrak.workers.dev
 
 media_folder: "public/images"
 public_folder: "/images"
