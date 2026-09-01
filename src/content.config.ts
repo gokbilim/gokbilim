@@ -16,4 +16,8 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { blog };
+export const collections = {
+  // Mevcut blog koleksiyonunu virgülle ayırarak dışa aktar
+  'blog': blog, 
+  'haberler': haberler,
+};
