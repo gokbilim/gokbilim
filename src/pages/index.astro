@@ -1,4 +1,64 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Haberleri çekip tarihe göre sıralıyoruz ve en yeni 3 tanesini alıyoruz
+const butunHaberler = await getCollection('haberler');
+const sonHaberler = butunHaberler.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 3);
+---
+
+<Layout title="gokbilim.net">
+  <main>
+    <header style="text-align: center; margin-bottom: 2rem;">
+      <h1>gokbilim.net'e Hoş Geldiniz</h1>
+      <p>Evrenin derinliklerine dair güncel gelişmeler ve tarihsel keşifler.</p>
+    </header>
+
+    <section id="haberler">
+      <h2>Güncel Haberler</h2>
+      <ul>
+        {sonHaberler.map((haber) => (
+          <li style="margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #ddd; border-radius: 8px;">
+            <article>
+              {haber.data.image && <img src={haber.data.image} alt={haber.data.title} style="max-width: 100%; height: auto; border-radius: 4px;" />}
+              <h3>{haber.data.title}</h3>
+              {haber.data.importance && <p style="color: #d9534f;"><strong>Neden Önemli:</strong> {haber.data.importance}</p>}
+              <p>{haber.body}</p>
+            </article>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="gozlemevleri">
+      <h2>Türkiye'deki Gözlemevleri</h2>
+      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+    </section>
+
+    <hr />
+
+    <section id="etkinlikler">
+      <h2>Gözlem Etkinlikleri</h2>
+      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+    </section>
+
+    <hr />
+
+    <section id="haftanin-fotografi">
+      <h2>Haftanın Fotoğrafı</h2>
+      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+    </section>
+
+    <hr />
+
+    <section id="tarih">
+      <h2>Gökbilim Tarihi</h2>
+      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+    </section>
+  </main>
+</Layout>
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
