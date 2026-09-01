@@ -1,61 +1,61 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-// Haberleri çekip tarihe göre sıralıyoruz ve en yeni 3 tanesini alıyoruz
 const butunHaberler = await getCollection('haberler');
 const sonHaberler = butunHaberler.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 3);
 ---
 
-<Layout title="gokbilim.net">
-  <main>
-    <header style="text-align: center; margin-bottom: 2rem;">
-      <h1>gokbilim.net'e Hoş Geldiniz</h1>
-      <p>Evrenin derinliklerine dair güncel gelişmeler ve tarihsel keşifler.</p>
-    </header>
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gokbilim.net</title>
+  </head>
+  <body style="background-color: #0a0e17; color: #e0e6ed; font-family: sans-serif; margin: 0; padding: 0;">
+    <main style="max-width: 900px; margin: 0 auto; padding: 2rem;">
+      
+      <header style="text-align: center; margin-bottom: 3rem;">
+        <h1 style="color: #d4af37;">gokbilim.net</h1>
+        <p>Evrenin derinliklerine dair güncel gelişmeler ve tarihsel keşifler.</p>
+      </header>
 
-    <section id="haberler">
-      <h2>Güncel Haberler</h2>
-      <ul>
-        {sonHaberler.map((haber) => (
-          <li style="margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #ddd; border-radius: 8px;">
-            <article>
-              {haber.data.image && <img src={haber.data.image} alt={haber.data.title} style="max-width: 100%; height: auto; border-radius: 4px;" />}
-              <h3>{haber.data.title}</h3>
-              {haber.data.importance && <p style="color: #d9534f;"><strong>Neden Önemli:</strong> {haber.data.importance}</p>}
-              <p>{haber.body}</p>
-            </article>
-          </li>
-        ))}
-      </ul>
-    </section>
+      <section id="haberler">
+        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Güncel Haberler</h2>
+        <ul style="list-style: none; padding: 0;">
+          {sonHaberler.map((haber) => (
+            <li style="background: #111827; margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 8px;">
+              <article>
+                {haber.data.image && <img src={haber.data.image} alt={haber.data.title} style="max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 1rem;" />}
+                <h3 style="margin-top: 0; color: #60a5fa;">{haber.data.title}</h3>
+                {haber.data.importance && <p style="color: #fb923c;"><strong>Neden Önemli:</strong> {haber.data.importance}</p>}
+                <p>{haber.body}</p>
+              </article>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-    <hr />
+      <section id="gozlemevleri" style="margin-top: 3rem;">
+        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Türkiye'deki Gözlemevleri</h2>
+        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+      </section>
 
-    <section id="gozlemevleri">
-      <h2>Türkiye'deki Gözlemevleri</h2>
-      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-    </section>
+      <section id="etkinlikler" style="margin-top: 3rem;">
+        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Gözlem Etkinlikleri</h2>
+        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+      </section>
 
-    <hr />
+      <section id="haftanin-fotografi" style="margin-top: 3rem;">
+        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Haftanın Fotoğrafı</h2>
+        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+      </section>
 
-    <section id="etkinlikler">
-      <h2>Gözlem Etkinlikleri</h2>
-      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-    </section>
+      <section id="tarih" style="margin-top: 3rem; margin-bottom: 4rem;">
+        <h2 style="border-bottom: 1px solid #1f2937; padding-bottom: 0.5rem;">Gökbilim Tarihi</h2>
+        <p style="color: #9ca3af;">Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
+      </section>
 
-    <hr />
-
-    <section id="haftanin-fotografi">
-      <h2>Haftanın Fotoğrafı</h2>
-      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-    </section>
-
-    <hr />
-
-    <section id="tarih">
-      <h2>Gökbilim Tarihi</h2>
-      <p>Bu alan CMS üzerinden içerik girildikçe aktif olacaktır.</p>
-    </section>
-  </main>
-</Layout>
+    </main>
+  </body>
+</html>
