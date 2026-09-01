@@ -3,7 +3,7 @@ import '../styles/global.css';
 import { getCollection } from 'astro:content';
 
 const butunHaberler = await getCollection('haberler');
-const sonHaberler = butunHaberler.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()).slice(0, 3);
+const sonHaberler = butunHaberler.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()).slice(0, 3);
 ---
 
 <!DOCTYPE html>
