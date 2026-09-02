@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
-  const butunHaberler = await getCollection('haberler');
+  const butunHaberler = await getCollection('icerikler');
   return butunHaberler.map(haber => ({
     params: { id: haber.id },
     props: { haber },
