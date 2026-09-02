@@ -2,10 +2,8 @@
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
 
-// Artık sadece "haberler" değil, tüm içerik havuzunu (icerikler) çekiyoruz
 const butunIcerikler = await getCollection('icerikler');
 
-// En yeni 9 içeriği tarihe göre sıralayıp alıyoruz
 const sonIcerikler = butunIcerikler
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
   .slice(0, 9);
@@ -16,7 +14,7 @@ const sonIcerikler = butunIcerikler
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gokbilim.net - Evrenin Derinlikleri</title>
+    <title>gokbilim.net - Türkiye'nin Gökbilim Portalı</title>
   </head>
   <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
     
@@ -27,7 +25,6 @@ const sonIcerikler = butunIcerikler
           <span class="text-amber-500">gokbilim</span>.net
         </a>
         <ul class="flex flex-wrap gap-4 text-sm font-medium text-slate-300">
-          <!-- Bu linklerin sayfalarını bir sonraki adımda oluşturacağız -->
           <li><a href="/kategori/haberler" class="hover:text-amber-500 transition-colors">Haberler</a></li>
           <li><a href="/kategori/gozlemevleri" class="hover:text-amber-500 transition-colors">Gözlemevleri</a></li>
           <li><a href="/kategori/etkinlikler" class="hover:text-amber-500 transition-colors">Etkinlikler</a></li>
@@ -38,42 +35,36 @@ const sonIcerikler = butunIcerikler
     </nav>
 
     <!-- Kahraman (Hero) Alanı -->
-    <header class="max-w-6xl mx-auto px-6 py-16 text-center">
-      <div class="flex justify-center mb-8">
-        <img src="/images/logo.jpg" alt="gokbilim.net Logo" class="h-32 w-auto rounded-full shadow-[0_0_30px_rgba(245,158,11,0.2)]" />
+    <header class="max-w-6xl mx-auto px-6 pt-20 pb-12 text-center">
+      <div class="flex justify-center mb-6">
+        <img src="/images/logo.jpg" alt="gokbilim.net Logo" class="h-44 w-auto rounded-full shadow-[0_0_30px_rgba(245,158,11,0.2)]" />
       </div>
-      <h1 class="text-4xl md:text-5xl font-bold text-slate-100 tracking-tight mb-4">
-        Evrenin Derinliklerini Keşfedin
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-100 tracking-tight mb-3">
+        <span class="text-amber-500">gokbilim</span>.net
       </h1>
       <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
-        Güncel astronomi gelişmeleri, tarihi keşifler, gözlemevleri ve etkinlikler tek bir yerde.
+        Türkiye'nin Gökbilim Portalı
       </p>
     </header>
 
     <!-- Ana İçerik -->
     <main class="max-w-6xl mx-auto px-6 pb-24">
       
-      <!-- Ortak İçerik Akışı Bölümü -->
-      <section id="son-eklenenler">
-        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-8">
-          <h2 class="text-2xl md:text-3xl font-semibold text-slate-100">Son Eklenenler</h2>
-        </div>
-        
-        <!-- Kartlar Izgarası (Grid) -->
+      <!-- Ortak İçerik Akışı Bölümü (Başlık Kaldırıldı) -->
+      <section id="icerik-akisi">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sonIcerikler.map((icerik) => (
-            <!-- Link artık /icerikler/ klasörüne gidiyor -->
             <a href={`/icerikler/${icerik.id}`} class="group block h-full">
               <article class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col h-full relative">
                 
-                <!-- Kategori Etiketi -->
+                {/* Kategori Etiketi */}
                 {icerik.data.category && (
                   <div class="absolute top-4 left-4 z-10 bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                     {icerik.data.category}
                   </div>
                 )}
 
-                <!-- Görsel -->
+                {/* Görsel */}
                 {icerik.data.image ? (
                   <div class="aspect-video overflow-hidden bg-slate-800 relative">
                     <img src={icerik.data.image} alt={icerik.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -84,7 +75,7 @@ const sonIcerikler = butunIcerikler
                   </div>
                 )}
                 
-                <!-- Metin İçeriği -->
+                {/* Metin İçeriği */}
                 <div class="p-6 flex flex-col flex-grow">
                   <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-amber-500 transition-colors">
                     {icerik.data.title}
