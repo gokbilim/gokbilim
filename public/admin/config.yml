@@ -8,52 +8,17 @@ media_folder: "public/images"
 public_folder: "/images"
 
 collections:
-  - name: "haberler"
-    label: "Haberler"
-    folder: "src/content/haberler"
+  - name: "icerikler"
+    label: "Tüm İçerikler"
+    folder: "src/content/icerikler"
     create: true
     fields:
       - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Tarih", name: "pubDate", widget: "datetime"}
-      - {label: "Neden Önemli", name: "importance", widget: "text"}
+      - {label: "Kategori", name: "category", widget: "select", options: ["Haberler", "Gözlemevleri", "Etkinlikler", "Haftanın Fotoğrafı", "Gökbilim Tarihi"]}
+      - {label: "Yayın Tarihi", name: "pubDate", widget: "datetime"}
       - {label: "Görsel", name: "image", widget: "image", required: false}
-      - {label: "İçerik", name: "body", widget: "markdown"}
-
-  - name: "gozlemevleri"
-    label: "Türkiye'deki Gözlemevleri"
-    folder: "src/content/gozlemevleri"
-    create: true
-    fields:
-      - {label: "Gözlemevi Adı", name: "title", widget: "string"}
-      - {label: "Şehir", name: "city", widget: "string"}
-      - {label: "Görsel", name: "image", widget: "image", required: false}
-      - {label: "İçerik", name: "body", widget: "markdown"}
-
-  - name: "etkinlikler"
-    label: "Gözlem Etkinlikleri"
-    folder: "src/content/etkinlikler"
-    create: true
-    fields:
-      - {label: "Etkinlik Adı", name: "title", widget: "string"}
-      - {label: "Tarih", name: "eventDate", widget: "datetime"}
-      - {label: "Görsel", name: "image", widget: "image", required: false}
-      - {label: "İçerik", name: "body", widget: "markdown"}
-
-  - name: "haftanin-fotografi"
-    label: "Haftanın Fotoğrafı"
-    folder: "src/content/fotograflar"
-    create: true
-    fields:
-      - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Fotoğraf", name: "image", widget: "image"}
-      - {label: "Açıklama", name: "body", widget: "markdown"}
-
-  - name: "tarih"
-    label: "Gökbilim Tarihi"
-    folder: "src/content/tarih"
-    create: true
-    fields:
-      - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Dönem/Yüzyıl", name: "period", widget: "string"}
-      - {label: "Görsel", name: "image", widget: "image", required: false}
+      - {label: "Özet / Neden Önemli", name: "importance", widget: "text", required: false}
+      - {label: "Şehir (Gözlemevleri için)", name: "city", widget: "string", required: false}
+      - {label: "Etkinlik Tarihi (Etkinlikler için)", name: "eventDate", widget: "datetime", required: false}
+      - {label: "Dönem/Yüzyıl (Tarih için)", name: "period", widget: "string", required: false}
       - {label: "İçerik", name: "body", widget: "markdown"}

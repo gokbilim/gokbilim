@@ -1,5 +1,6 @@
 ---
 title: James Webb Uzay Teleskobu Karbon Temelli Bileşikler Saptadı
+category: Haberler
 pubDate: 2026-09-01T23:33:00.000+03:00
 importance: Bu keşif, yaşamın temel taşı sayılan karbon bileşiklerinin, evrenin
   çok erken dönemlerinde de var olduğunu gösteriyor. Yaşamın sadece Dünyamıza
