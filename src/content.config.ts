@@ -13,6 +13,13 @@ const icerikler = defineCollection({
     city: z.string().optional(),
     eventDate: z.coerce.date().optional(),
     period: z.string().optional(),
+    kunye: z.object({
+      konum: z.string().optional(),
+      rakim: z.string().optional(),
+      kurum: z.string().optional(),
+      kurulus: z.string().optional(),
+      kod: z.string().optional(),
+    }).optional(),
   }),
 });
 
