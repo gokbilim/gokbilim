@@ -19,6 +19,19 @@ collections:
       - {label: "Görsel", name: "image", widget: "image", required: false}
       - {label: "Özet / Neden Önemli", name: "importance", widget: "text", required: false}
       - {label: "Şehir (Gözlemevleri için)", name: "city", widget: "string", required: false}
+      
+      # Gözlemevleri için eklenen Künye Bilgileri alanı
+      - label: "Künye Bilgileri (Gözlemevleri için)"
+        name: "kunye"
+        widget: "object"
+        required: false
+        fields:
+          - {label: "Konum", name: "konum", widget: "string", required: false}
+          - {label: "Rakım", name: "rakim", widget: "string", required: false}
+          - {label: "Bağlı Kurum", name: "kurum", widget: "string", required: false}
+          - {label: "Kuruluş Yılı", name: "kurulus", widget: "string", required: false}
+          - {label: "Gözlemevi Kodu", name: "kod", widget: "string", required: false}
+          
       - {label: "Etkinlik Tarihi (Etkinlikler için)", name: "eventDate", widget: "datetime", required: false}
       - {label: "Dönem/Yüzyıl (Tarih için)", name: "period", widget: "string", required: false}
       - {label: "İçerik", name: "body", widget: "markdown"}

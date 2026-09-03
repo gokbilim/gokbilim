@@ -52,6 +52,7 @@ const { Content } = await render(icerik);
           <li><a href="/kategori/etkinlikler" class="hover:text-amber-500 transition-colors">Etkinlikler</a></li>
           <li><a href="/kategori/haftanin-fotografi" class="hover:text-amber-500 transition-colors">Haftanın Fotoğrafı</a></li>
           <li><a href="/kategori/tarih" class="hover:text-amber-500 transition-colors">Gökbilim Tarihi</a></li>
+          <li><a href="/kategori/kutuphane" class="hover:text-amber-500 transition-colors">Gökbilim Kütüphanesi</a></li>
         </ul>
       </div>
     </nav>
@@ -83,6 +84,25 @@ const { Content } = await render(icerik);
           <div class="bg-amber-950/30 border-l-4 border-amber-500 p-5 mb-10 rounded-r-xl shadow-inner">
             <h2 class="text-lg font-bold text-amber-500 mb-2">Neden Önemli?</h2>
             <p class="text-amber-100/90 leading-relaxed">{icerik.data.importance}</p>
+          </div>
+        )}
+
+        <!-- YENİ: Künye Bilgileri Bölümü (Gözlemevleri İçin) -->
+        {icerik.data.kunye && (
+          <div class="bg-blue-950/30 border-l-4 border-blue-500 p-6 mb-10 rounded-r-xl shadow-inner">
+            <h2 class="text-lg font-bold text-blue-400 mb-4 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+              </svg>
+              Künye ve Genel Bakış
+            </h2>
+            <ul class="space-y-2 text-blue-100/90 text-base">
+              {icerik.data.kunye.konum && <li><strong class="text-blue-300">Konum:</strong> {icerik.data.kunye.konum}</li>}
+              {icerik.data.kunye.rakim && <li><strong class="text-blue-300">Rakım:</strong> {icerik.data.kunye.rakim}</li>}
+              {icerik.data.kunye.kurum && <li><strong class="text-blue-300">Bağlı Kurum:</strong> {icerik.data.kunye.kurum}</li>}
+              {icerik.data.kunye.kurulus && <li><strong class="text-blue-300">Kuruluş Yılı:</strong> {icerik.data.kunye.kurulus}</li>}
+              {icerik.data.kunye.kod && <li><strong class="text-blue-300">Gözlemevi Kodu:</strong> {icerik.data.kunye.kod}</li>}
+            </ul>
           </div>
         )}
         
