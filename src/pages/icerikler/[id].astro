@@ -67,10 +67,12 @@ const { Content } = await render(icerik);
           <img src={icerik.data.image} alt={icerik.data.title} class="w-full rounded-2xl mb-10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-slate-800" />
         )}
         
-        <!-- Neden Önemli Bölümü -->
+	<!-- Neden Önemli / Ön Bilgi Bölümü -->
         {icerik.data.importance && (
           <div class="bg-amber-950/30 border-l-4 border-amber-500 p-5 mb-10 rounded-r-xl shadow-inner">
-            <h2 class="text-lg font-bold text-amber-500 mb-2">Neden Önemli?</h2>
+            <h2 class="text-lg font-bold text-amber-500 mb-2">
+              {icerik.data.category === 'Gökbilim Tarihi' ? 'Ön Bilgi' : 'Neden Önemli?'}
+            </h2>
             <p class="text-amber-100/90 leading-relaxed">{icerik.data.importance}</p>
           </div>
         )}
