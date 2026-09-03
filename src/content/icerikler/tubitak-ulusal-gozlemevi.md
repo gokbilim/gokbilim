@@ -3,6 +3,7 @@ title: "TÜBİTAK Ulusal Gözlemevi: Uzaya Açılan Penceremiz"
 category: "Gözlemevleri"
 pubDate: 2026-09-03T13:50:00.000+03:00
 city: "Antalya"
+image: "/images/tubitak-gozlemevi.jpg"
 importance: "TUG, sahip olduğu dev teleskoplar ve elverişli coğrafi konumuyla Türkiye'deki astronomi araştırmalarının merkezidir. Gökbilimcilere uluslararası standartlarda gözlem imkânı sunar."
 ---
 
