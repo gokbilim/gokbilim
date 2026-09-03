@@ -1,12 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
 import '../../styles/global.css';
-import Navbar from '../../components/Navbar.astro';
+import Navbar from '../../components/Navbar.astro'; // Yeni menü bileşenimizi ekledik
 
 export async function getStaticPaths() {
   const butunIcerikler = await getCollection('icerikler');
 
-  // Menüdeki adreslerle eşleşen sabit kategori listemiz
+  // "Haftanın Fotoğrafı" burada "Ayın Fotoğrafı" olarak güncellendi
   const kategoriler = [
     { slug: 'haberler', name: 'Haberler' },
     { slug: 'gozlemevleri', name: 'Gözlemevleri' },
@@ -41,8 +41,8 @@ const { kategoriAdi, icerikler } = Astro.props;
   </head>
   <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
     
-    <!-- Sabit Üst Menü -->
-	<Navbar aktifKategori={kategoriAdi} />
+    <!-- Sabit Üst Menü Artık Tek Noktadan Geliyor -->
+    <Navbar aktifKategori={kategoriAdi} />
 
     <!-- Kategori Başlığı -->
     <header class="max-w-6xl mx-auto px-6 pt-16 pb-12 text-center border-b border-slate-800/50 mb-12">
