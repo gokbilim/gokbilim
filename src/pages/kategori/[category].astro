@@ -1,0 +1,122 @@
+---
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const butunIcerikler = await getCollection('icerikler');
+
+  // Menüdeki adreslerle eşleşen sabit kategori listemiz
+  const kategoriler = [
+    { slug: 'haberler', name: 'Haberler' },
+    { slug: 'gozlemevleri', name: 'Gözlemevleri' },
+    { slug: 'etkinlikler', name: 'Etkinlikler' },
+    { slug: 'haftanin-fotografi', name: 'Haftanın Fotoğrafı' },
+    { slug: 'tarih', name: 'Gökbilim Tarihi' }
+  ];
+
+  return kategoriler.map(({ slug, name }) => {
+    // Sadece bu kategoriye ait içerikleri filtreleyip tarihe göre sıralıyoruz
+    const filtrelenmis = butunIcerikler
+      .filter((icerik) => icerik.data.category === name)
+      .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+    return {
+      params: { category: slug },
+      props: { kategoriAdi: name, icerikler: filtrelenmis },
+    };
+  });
+}
+
+const { kategoriAdi, icerikler } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{kategoriAdi} - gokbilim.net</title>
+  </head>
+  <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
+    
+    <!-- Sabit Üst Menü -->
+    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+        <a href="/" class="text-xl font-bold text-slate-100">
+          <span class="text-amber-500">gokbilim</span>.net
+        </a>
+        <ul class="flex flex-wrap gap-4 text-sm font-medium text-slate-300">
+          <li><a href="/kategori/haberler" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Haberler' ? 'text-amber-500' : ''}`}>Haberler</a></li>
+          <li><a href="/kategori/gozlemevleri" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Gözlemevleri' ? 'text-amber-500' : ''}`}>Gözlemevleri</a></li>
+          <li><a href="/kategori/etkinlikler" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Etkinlikler' ? 'text-amber-500' : ''}`}>Etkinlikler</a></li>
+          <li><a href="/kategori/haftanin-fotografi" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Haftanın Fotoğrafı' ? 'text-amber-500' : ''}`}>Haftanın Fotoğrafı</a></li>
+          <li><a href="/kategori/tarih" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Gökbilim Tarihi' ? 'text-amber-500' : ''}`}>Gökbilim Tarihi</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Kategori Başlığı -->
+    <header class="max-w-6xl mx-auto px-6 pt-16 pb-12 text-center border-b border-slate-800/50 mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight">
+        {kategoriAdi}
+      </h1>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 min-h-[40vh]">
+      
+      {icerikler.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {icerikler.map((icerik) => (
+            <a href={`/icerikler/${icerik.id}`} class="group block h-full">
+              <article class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col h-full relative">
+                
+                {icerik.data.image ? (
+                  <div class="aspect-video overflow-hidden bg-slate-800 relative">
+                    <img src={icerik.data.image} alt={icerik.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                ) : (
+                  <div class="aspect-video bg-slate-800 flex items-center justify-center">
+                    <span class="text-slate-600">Görsel Yok</span>
+                  </div>
+                )}
+                
+                <div class="p-6 flex flex-col flex-grow">
+                  <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-amber-500 transition-colors">
+                    {icerik.data.title}
+                  </h3>
+                  
+                  {icerik.data.importance && (
+                    <div class="bg-amber-950/30 border-l-2 border-amber-500 p-3 mb-4 rounded-r-md">
+                      <p class="text-sm text-amber-400"><strong>Neden Önemli:</strong> {icerik.data.importance}</p>
+                    </div>
+                  )}
+                  
+                  <p class="text-slate-400 text-sm line-clamp-3 mb-4 flex-grow">
+                    {icerik.body.substring(0, 150)}...
+                  </p>
+                  
+                  <div class="text-xs text-slate-500 pt-4 border-t border-slate-800 mt-auto flex justify-between items-center">
+                    <span>{new Date(icerik.data.pubDate).toLocaleDateString('tr-TR')}</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="flex flex-col items-center justify-center text-center py-20">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-slate-700 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+          </svg>
+          <h2 class="text-2xl font-bold text-slate-400 mb-2">Henüz İçerik Yok</h2>
+          <p class="text-slate-500 max-w-md">Bu kategoriye ait yazılar çok yakında eklenecektir. Lütfen daha sonra tekrar kontrol edin.</p>
+        </div>
+      )}
+
+    </main>
+    
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+      <p>&copy; {new Date().getFullYear()} gokbilim.net - Tüm hakları saklıdır.</p>
+    </footer>
+  </body>
+</html>
