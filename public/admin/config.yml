@@ -14,7 +14,7 @@ collections:
     create: true
     fields:
       - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Kategori", name: "category", widget: "select", options: ["Haberler", "Gözlemevleri", "Etkinlikler", "Haftanın Fotoğrafı", "Gökbilim Tarihi"]}
+      - {label: "Kategori", name: "category", widget: "select", options: ["Haberler", "Gözlemevleri", "Etkinlikler", "Ayın Fotoğrafı", "Gökbilim Tarihi"]}
       - {label: "Yayın Tarihi", name: "pubDate", widget: "datetime"}
       - {label: "Görsel", name: "image", widget: "image", required: false}
       - {label: "Özet / Neden Önemli", name: "importance", widget: "text", required: false}

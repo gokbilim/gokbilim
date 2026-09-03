@@ -1,0 +1,18 @@
+---
+const { aktifKategori = '' } = Astro.props;
+---
+<nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+    <a href="/" class="text-xl font-bold text-slate-100">
+      <span class="text-amber-500">gokbilim</span>.net
+    </a>
+    <ul class="flex flex-wrap gap-4 text-sm font-medium text-slate-300">
+      <li><a href="/kategori/haberler" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Haberler' ? 'text-amber-500' : ''}`}>Haberler</a></li>
+      <li><a href="/kategori/gozlemevleri" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Gözlemevleri' ? 'text-amber-500' : ''}`}>Gözlemevleri</a></li>
+      <li><a href="/kategori/etkinlikler" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Etkinlikler' ? 'text-amber-500' : ''}`}>Etkinlikler</a></li>
+      <li><a href="/kategori/ayin-fotografi" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Ayın Fotoğrafı' ? 'text-amber-500' : ''}`}>Ayın Fotoğrafı</a></li>
+      <li><a href="/kategori/tarih" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Gökbilim Tarihi' ? 'text-amber-500' : ''}`}>Gökbilim Tarihi</a></li>
+      <li><a href="/kategori/kutuphane" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Gökbilim Kütüphanesi' ? 'text-amber-500' : ''}`}>Gökbilim Kütüphanesi</a></li>
+    </ul>
+  </div>
+</nav>
