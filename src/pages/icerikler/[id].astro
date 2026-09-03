@@ -5,18 +5,26 @@ import '../../styles/global.css';
 export async function getStaticPaths() {
   const butunIcerikler = await getCollection('icerikler');
   
-  // İçerikleri tarihe göre sıralıyoruz (en yeniden en eskiye)
+  // Tüm içerikleri tarihe göre sıralıyoruz (en yeniden en eskiye)
   const sirali = butunIcerikler.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
-  return sirali.map((icerik, index) => ({
-    params: { id: icerik.id },
-    props: { 
-      icerik,
-      // Kronolojik gezinme için önceki ve sonraki içerikleri belirliyoruz
-      onceki: index < sirali.length - 1 ? sirali[index + 1] : null,
-      sonraki: index > 0 ? sirali[index - 1] : null,
-    },
-  }));
+  return sirali.map((icerik) => {
+    // Mevcut içeriğin kategorisindeki diğer yazıları filtreliyoruz
+    const ayniKategori = sirali.filter((oge) => oge.data.category === icerik.data.category);
+    
+    // Bu içeriğin kendi kategorisi içindeki sırasını buluyoruz
+    const index = ayniKategori.findIndex((oge) => oge.id === icerik.id);
+
+    return {
+      params: { id: icerik.id },
+      props: { 
+        icerik,
+        // Sadece aynı kategori içindeki önceki ve sonraki içerikler
+        onceki: index < ayniKategori.length - 1 ? ayniKategori[index + 1] : null,
+        sonraki: index > 0 ? ayniKategori[index - 1] : null,
+      },
+    };
+  });
 }
 
 const { icerik, onceki, sonraki } = Astro.props;
