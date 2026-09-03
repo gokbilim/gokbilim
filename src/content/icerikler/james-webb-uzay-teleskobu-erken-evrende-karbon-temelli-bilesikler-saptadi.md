@@ -5,7 +5,7 @@ pubDate: 2026-09-01T23:33:00.000+03:00
 importance: Bu keşif, yaşamın temel taşı sayılan karbon bileşiklerinin, evrenin
   çok erken dönemlerinde de var olduğunu gösteriyor. Yaşamın sadece Dünyamıza
   özgü olduğu fikri günden güne zayıflıyor.
-image: /images/gemini_generated_image_5hlwda5hlwda5hlw.jpg
+image: /images/jwst-karbon.jpg
 ---
 James Webb Uzay Teleskobu (JWST), evrenin uzak köşelerine bakarak yürüttüğü kapsamlı taramalar sonucunda dikkate değer verilere ulaştı. Uluslararası astronomi ekibi, Dünya'dan milyarlarca ışık yılı mesafedeki galaksi kümesinde karmaşık organik moleküllerin izlerini tespit etti.
 
