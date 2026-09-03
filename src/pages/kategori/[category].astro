@@ -11,7 +11,8 @@ export async function getStaticPaths() {
     { slug: 'gozlemevleri', name: 'Gözlemevleri' },
     { slug: 'etkinlikler', name: 'Etkinlikler' },
     { slug: 'haftanin-fotografi', name: 'Haftanın Fotoğrafı' },
-    { slug: 'tarih', name: 'Gökbilim Tarihi' }
+    { slug: 'tarih', name: 'Gökbilim Tarihi' },
+    { slug: 'kutuphane', name: 'Gökbilim Kütüphanesi' }
   ];
 
   return kategoriler.map(({ slug, name }) => {
@@ -51,6 +52,7 @@ const { kategoriAdi, icerikler } = Astro.props;
           <li><a href="/kategori/etkinlikler" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Etkinlikler' ? 'text-amber-500' : ''}`}>Etkinlikler</a></li>
           <li><a href="/kategori/haftanin-fotografi" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Haftanın Fotoğrafı' ? 'text-amber-500' : ''}`}>Haftanın Fotoğrafı</a></li>
           <li><a href="/kategori/tarih" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Gökbilim Tarihi' ? 'text-amber-500' : ''}`}>Gökbilim Tarihi</a></li>
+          <li><a href="/kategori/kutuphane" class={`hover:text-amber-500 transition-colors ${kategoriAdi === 'Gökbilim Kütüphanesi' ? 'text-amber-500' : ''}`}>Gökbilim Kütüphanesi</a></li>
         </ul>
       </div>
     </nav>
