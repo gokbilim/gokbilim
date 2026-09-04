@@ -1,6 +1,6 @@
 ---
 title: "Gölgelerin Fısıltısı ve Gökyüzünü Okumak"
-category: "Bilim Tarihi"
+category: "Gökbilim Tarihi"
 pubDate: 2026-09-01T10:00:00.000+03:00
 image: "/images/antik-mitoloji-gokyuzu.jpg"
 importance: "İlk medeniyetlerin gökyüzüne bakış açısı, astroloji ve mitolojinin iç içe geçtiği dönemin analizi."
