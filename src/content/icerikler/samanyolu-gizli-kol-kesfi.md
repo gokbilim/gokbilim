@@ -2,7 +2,7 @@
 title: "Samanyolu'nun Gizemli Yapısı: Maggie"
 category: "Haberler"
 pubDate: 2026-09-05T15:00:00.000+03:00
-image: "/images/maggie-filament.jpg"
+image: "/images/radyo-filament.jpg"
 importance: "Nötr hidrojen gazının yaydığı 1420 MHz radyo sinyallerinin analizi, galaksimizin yapısında yıldız oluşum süreçlerine ışık tutacak devasa gaz iplikçiklerinin varlığını kanıtladı."
 ---
 
