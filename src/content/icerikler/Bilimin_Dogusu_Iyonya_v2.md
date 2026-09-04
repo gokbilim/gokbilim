@@ -14,7 +14,7 @@ Thales, depremlerin Poseidon’un mızrağını yere vurması yüzünden değil,
 
 Milet okulunun asıl büyük kırılması Thales'in öğrencisi Anaksimandros ile yaşandı. Anaksimandros bilinen dünyanın ilk haritasını papirüse çizdi. Bu haritayı kilitli kütüphanelerde saklamak yerine, Milet’in en kalabalık liman duvarına, gemicilerin her gün geçtiği agoraya astı. Amacı böbürlenmek değildi. Yanından geçen kaptanlara, gezginlere şunu söylüyordu: "Gittiğiniz yerleri bana anlatın. Hatalarımı bulun, haritayı düzeltelim." İşte o liman duvarında sallanan papirüs parçası, modern bilimin temelini oluşturan eleştirel düşüncenin doğuşuydu. Bilgi artık kutsal metinlerin dokunulmazlığından çıkmış; sınanabilen, yanlışlanabilen, güncellenebilen açık formata evrilmişti.
 
-![Anaksimandros Dünya Haritası](images/anaximender-map.jpg)
+![Anaksimandros Dünya Haritası](/images/anaximender-map.jpg)
 
 Gözlem ve mantık geliştikçe maddeyi anlama çabası hızlandı. Sicilyalı düşünür Empedokles, yeryüzündeki her şeyin toprak, hava, ateş ve su olmak üzere dört temel elementin birleşimiyle oluştuğunu, sevgi ve nefret itkileriyle değişime uğradığını söyledi. Yeryüzü kaotikti, sürekli değişiyordu, çürüyordu.
 
@@ -22,7 +22,7 @@ Fakat bu noktada sahneye tarihin en etkili filozofu Aristo çıktı. Aristo, evr
 
 Aristo'ya göre yeryüzü (Ay altı alem) Empedokles'in o kaotik dört elementinden oluşuyordu. Ancak gökyüzü (Ay üstü alem) bunlardan tamamen bağımsız, asla bozulmayan, değişmeyen, ebedi beşinci elementten, yani "Esir"den (Aether) yapılmıştı. Kusursuzluk saplantısı yörüngelerin şekline de yansıdı. Başlangıcı ve sonu olmayan yegane geometrik form daireydi. Haliyle tanrısal gök cisimleri pürüzsüz küreler olmak zorundaydı, yörüngeleri kesinlikle kusursuz daireler çizmeliydi. Aristo evreni devasa, pürüzsüz, şeffaf kristal kürelerin iç içe geçtiği, tıkır tıkır işleyen dev saat gibi kurguladı.
 
-![Aristo Evren Modeli](images/aristo-universe.jpg)
+![Aristo Evren Modeli](/images/aristo-universe.jpg)
 
 Tüm sistemin tam merkezinde hareketsiz şekilde Dünya duruyordu. Peki neden Dünya merkezdeydi? Bu durum dönemin insanı için kibrin ötesinde, son derece mantıklı gözlemlere dayanıyordu:
 
