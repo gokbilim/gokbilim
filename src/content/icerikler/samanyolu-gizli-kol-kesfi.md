@@ -5,7 +5,6 @@ category: "Haberler"
 pubDate: 2026-09-05T15:00:00.000+03:00
 image: "/images/radyo-filament.jpg"
 importance: "Nötr hidrojen gazının yaydığı 21 santimetrelik radyo emisyonlarının analizi, Samanyolu'nda yaklaşık 3.900 ışık yılı uzunluğunda devasa ve büyük ölçüde atomik hidrojenden oluşan bir filamentin varlığını ortaya koydu. Maggie adı verilen bu yapı, atomik gazdan moleküler gaza ve yıldız oluşumuna uzanan madde döngüsünü anlamak için önemli ipuçları sunuyor."
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Max Planck Astronomi Enstitüsü (MPIA) araştırmacısı Jonas Syed ve Juan D. Soler öncülüğündeki uluslararası gökbilim ekibi, Samanyolu Galaksisi'ndeki atomik hidrojen gazını inceleyen THOR araştırmasının verilerini kullanarak devasa bir gaz filamenti keşfetti. Bulgular, *Astronomy & Astrophysics* dergisinde 2021 yılında yayımlanan çalışmada ayrıntılı olarak ortaya kondu. Araştırmacılar, yıldızlararası ortamdaki nötr hidrojen atomlarının yaydığı 21 santimetrelik (yaklaşık 1420 MHz) radyo emisyonlarını inceleyerek, "Maggie" adı verilen yapının tek ve büyük ölçüde bütünlüklü bir filament olduğunu belirledi. Filamentin adı, Juan D. Soler'in memleketi Kolombiya'daki Magdalena Nehri'nden esinleniyor.
 

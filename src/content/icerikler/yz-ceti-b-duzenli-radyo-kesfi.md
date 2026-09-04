@@ -5,7 +5,6 @@ category: Haberler
 pubDate: 2026-09-05T12:00:00.000+03:00
 importance: Keşif, Güneş sistemi dışındaki kayalık gezegenlerin manyetik alanlarını doğrudan ölçmek zor olsa da, yıldızlarla gezegenleri arasındaki manyetik etkileşimlerden kaynaklanan radyo sinyalleri bu konuda önemli ipuçları sağlayabilir.
 image: /images/yz-ceti-b-radyo.jpg
-----------------------------------
 
 Colorado Üniversitesi'nden astrofizikçi J. Sebastian Pineda ve Bucknell Üniversitesi'nden Jackie Villadsen öncülüğündeki araştırma ekibi, Karl G. Jansky Çok Büyük Dizilim (VLA) teleskobuyla yaptıkları gözlemlerde, Dünya'dan yaklaşık 12 ışık yılı uzaklıktaki YZ Ceti sisteminden gelen güçlü ve kutuplanmış radyo patlamaları tespit etti. Bulgular, 2023 yılında *Nature Astronomy* dergisinde yayımlandı. Araştırmacılar, 2019 ve 2020 yıllarında gerçekleştirilen toplam yaklaşık 26 saatlik gözlemler sırasında 2–4 GHz aralığında koherent radyo emisyonları kaydetti.
 
