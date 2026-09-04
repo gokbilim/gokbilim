@@ -1,6 +1,6 @@
 ---
 title: "Bilimin Doğuşu: İyonya'dan Aristo'nun Kristal Kürelerine"
-category: "Bilim Tarihi"
+category: "Gökbilim Tarihi"
 pubDate: 2026-09-04T21:37:00.000+03:00
 image: "/images/antik-iyonya-astronomi.jpg"
 importance: "Mitolojiden gözleme dayalı bilime geçişin ve evren algımızın nasıl şekillendiğinin tarihsel yolculuğu."
