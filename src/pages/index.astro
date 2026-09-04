@@ -8,6 +8,13 @@ const butunIcerikler = await getCollection('icerikler');
 const sonIcerikler = butunIcerikler
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
   .slice(0, 9);
+
+const etiketler = {
+  'haberler': 'Neden Önemli:',
+  'gökbilim tarihi': 'Ön Bilgi:',
+  'gözlemevleri': 'Ön Bilgi:'
+};
+
 ---
 
 <!DOCTYPE html>
@@ -80,11 +87,13 @@ const sonIcerikler = butunIcerikler
                     {icerik.data.title}
                   </h3>
                   
-                  {icerik.data.importance && (
-                    <div class="bg-amber-950/30 border-l-2 border-amber-500 p-3 mb-4 rounded-r-md">
-                      <p class="text-sm text-amber-400"><strong>Neden Önemli:</strong> {icerik.data.importance}</p>
-                    </div>
-                  )}
+{icerik.data.importance && (
+  <div class="bg-amber-950/30 border-l-2 border-amber-500 p-3 mb-4 rounded-r-md">
+    <p class="text-sm text-amber-400">
+      <strong>{etiketler[icerik.data.category?.toLocaleLowerCase('tr-TR')] || 'Ön Bilgi:'}</strong> {icerik.data.importance}
+    </p>
+  </div>
+)}
                   
                   <p class="text-slate-400 text-sm line-clamp-3 mb-4 flex-grow">
                     {icerik.body.substring(0, 150)}...
