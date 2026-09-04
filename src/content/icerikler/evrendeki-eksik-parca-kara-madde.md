@@ -3,7 +3,7 @@ title: "Evrendeki Eksik Parça: Kara Madde"
 category: "Gökbilim Tarihi"
 pubDate: 2026-09-04T12:00:00.000+03:00
 image: "/images/kara-madde-kapak.jpg"
-importance: "Modern kozmolojinin en büyük gizemlerinden Kara Madde'nin keşif süreci, bilim insanlarının görünmeyeni anlama çabasını ve evren algımızın nasıl değiştiğini gözler önüne seriyor."
+importance: "Modern kozmolojinin en büyük gizemlerinden Kara Madde'nin keşif sürecini, bilim insanlarının görünmeyeni anlama çabasını ve evren algımızın nasıl değiştiğini inceliyoruz."
 period: "20. Yüzyıl"
 ---
 
