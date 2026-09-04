@@ -1,5 +1,5 @@
 ---
-title: "Gökbilim Kütüphanesi: Yıldızların Doğuşu, Yapısı ve Evrimsel Çeşitliliği"
+title: "Yıldızların Doğuşu, Yapısı ve Evrimsel Çeşitliliği"
 category: Gökbilim Kütüphanesi
 pubDate: 2026-09-05T12:30:00.000+03:00
 importance: Bu rehberde yıldızların fiziksel doğasını, nükleer süreçlerini ve sınıflandırma kurallarını incelemeye çalıştık.
