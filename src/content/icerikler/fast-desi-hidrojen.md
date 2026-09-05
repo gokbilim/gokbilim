@@ -1,8 +1,8 @@
 ---
-title: FAST ve DESI Gözlemleri: Evrende Yıldız Oluşumu Hidrojen Eksikliğinden Durmuyor
+title: "FAST ve DESI Gözlemleri: Evrende Yıldız Oluşumu Hidrojen Eksikliğinden Durmuyor"
 category: Haberler
 pubDate: 2026-09-06T12:03:38.000+03:00
-importance: Bu araştırma, galaksilerdeki yıldız oluşum hızının son 4,5 milyar yılda neden dramatik şekilde düştüğüne dair yaygın varsayımı değiştiriyor. Yeni veriler, yıldız fabrikalarının yavaşlamasının basitçe yakıt tükenmesinden kaynaklanmadığını, gazın moleküler forma dönüşümündeki verim düşüklüğüyle ilgili olduğunu gösteriyor.
+importance: "Bu araştırma, galaksilerdeki yıldız oluşum hızının son 4,5 milyar yılda neden dramatik şekilde düştüğüne dair yaygın varsayımı değiştiriyor. Yeni veriler, yıldız fabrikalarının yavaşlamasının basitçe yakıt tükenmesinden kaynaklanmadığını, gazın moleküler forma dönüşümündeki verim düşüklüğüyle ilgili olduğunu gösteriyor."
 image: /images/fast-desi-hidrojen.jpg
 ---
 
