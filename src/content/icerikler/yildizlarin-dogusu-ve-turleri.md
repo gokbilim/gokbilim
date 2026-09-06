@@ -7,8 +7,6 @@ importance: Bu rehberde yıldızların fiziksel doğasını, nasıl oluştuklar�
 image: /images/gokbilim-kutuphanesi-yildizlar.jpg
 ---
 
-Yıldız Nedir?
-
 Yıldızlar, kütleçekiminin etkisiyle bir arada tutulan, büyük ölçüde hidrojen ve helyumdan oluşan devasa plazma küreleridir. Bir yıldızın kütlesi, sıcaklığı ve kimyasal bileşimi; onun parlaklığını, rengini, yaşam süresini ve ömrünün sonunda bırakacağı kalıntının türünü büyük ölçüde belirler.
 
 Çoğu yıldız, yaşamlarının büyük bölümünde merkezlerinde hidrojen çekirdeklerini helyuma dönüştüren nükleer füzyon tepkimeleri gerçekleştirir. Bu süreçte açığa çıkan enerji, yıldızın iç katmanlarından geçerek sonunda elektromanyetik ışınım ve parçacık akışları biçiminde uzaya yayılır. Ancak yıldızların enerji üretimi yalnızca hidrojen füzyonuyla sınırlı değildir. Evrimlerinin ilerleyen aşamalarında daha ağır elementlerin çekirdekleri de füzyon tepkimelerine katılabilir.
