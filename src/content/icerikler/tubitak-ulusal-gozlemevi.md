@@ -7,11 +7,11 @@ city: "Antalya"
 image: "/images/tubitak-gozlemevi.jpg"
 importance: "TÜBİTAK Ulusal Gözlemevi, Bakırlıtepe'deki yüksek rakımlı yerleşkesi ve araştırma teleskoplarıyla Türkiye'deki gözlemsel astronomi ve astrofizik çalışmalarına önemli bir gözlem altyapısı sağlar."
 kunye:
-konum: "Bakırlıtepe, Saklıkent - Antalya"
-rakim: "2500 metre"
-kurum: "TÜBİTAK"
-kurulus: "1997"
-kod: "A84"
+  konum: "Bakırlıtepe, Saklıkent - Antalya"
+  rakim: "2500 metre"
+  kurum: "TÜBİTAK"
+  kurulus: "1997"
+  kod: "A84"
 ---
 
 Antalya'nın Saklıkent bölgesinde, Beydağları'nın 2500 metre rakımlı Bakırlıtepe zirvesinde bulunan **TÜBİTAK Ulusal Gözlemevi (TUG)**, Türkiye'nin başlıca profesyonel gözlemsel astronomi ve astrofizik araştırma altyapılarından biridir. Gözlemevi, özellikle üniversitelerde ve araştırma kurumlarında çalışan bilim insanlarına teleskop ve gözlem zamanı sağlayarak yıldızlardan ötegezegenlere, asteroitlerden galaksilere kadar çok farklı alanlarda araştırmalar yürütülmesine olanak tanır.
