@@ -176,4 +176,4 @@ Bu sınıflandırma kesin sınırlar içermez. Yıldızın başlangıçtaki küt
 
 Bu nedenle yıldızların yaşam öyküsü yalnızca "doğum, ana kol, ölüm" şeklinde basit bir sıra değildir. Aynı başlangıç kütlesine sahip iki yıldız bile farklı çevresel ve fiziksel koşullar nedeniyle farklı evrimsel yollar izleyebilir.
 
-## Yıldızlar bu açıdan yalnızca kendi ışıklarını üreten gök cisimleri değildir. Evrendeki ağır elementlerin önemli bir bölümünün oluşumunda rol oynar, çevrelerindeki gazı ve tozu zenginleştirir ve sonraki nesil yıldızların, gezegenlerin ve nihayetinde karmaşık kimyanın oluşması için gerekli hammaddenin ortaya çıkmasına katkıda bulunurlar.
+Yıldızlar bu açıdan yalnızca kendi ışıklarını üreten gök cisimleri değildir. Evrendeki ağır elementlerin önemli bir bölümünün oluşumunda rol oynar, çevrelerindeki gazı ve tozu zenginleştirir ve sonraki nesil yıldızların, gezegenlerin ve nihayetinde karmaşık kimyanın oluşması için gerekli hammaddenin ortaya çıkmasına katkıda bulunurlar.

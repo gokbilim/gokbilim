@@ -46,6 +46,8 @@ TUG'un Bakırlıtepe yerleşkesinde farklı büyüklük ve özelliklere sahip ar
 
 * **RTT150 (Rus-Türk Teleskobu):** 1,5 metre ayna çapına sahip RTT150, TUG'un en büyük araştırma teleskobudur. Türkiye ile Rusya arasındaki işbirliği kapsamında kullanılan teleskop, yüksek çözünürlüklü görüntüleme ve tayfölçümü çalışmalarında önemli bir role sahiptir. Üzerindeki tayfçekerler sayesinde yıldızların kimyasal bileşimi, sıcaklığı, hızları ve diğer fiziksel özellikleri hakkında bilgi elde edilebilir. Teleskop ayrıca değişen yıldızlar, yıldız sistemleri, galaksiler ve X-ışını gözlemevleri tarafından belirlenen kaynakların optik takip gözlemleri gibi çok çeşitli araştırmalarda kullanılabilir.
 
+![RTT150 Teleskobu](/images/tug-rtt150.jpg)
+
 * **T100:** 1 metre ayna çapına sahip T100, tam otomatik ve uzaktan yönetilebilen bir teleskoptur. Geniş formatlı görüntüleme kapasitesi sayesinde özellikle ışık değişimleri ölçülebilen gök cisimlerinin uzun süreli takibinde kullanılır. Ötegezegenlerin yıldızlarının önünden geçişleri sırasında oluşturduğu küçük parlaklık değişimlerinin ölçülmesi de bu tür teleskopların önemli kullanım alanlarından biridir.
 
 * **T60:** 60 santimetre ayna çapına sahip T60, robotik çalışma özelliğiyle öne çıkar. Hızlı yönlenebilmesi ve önceden programlanarak gözlemleri insan müdahalesi olmadan sürdürebilmesi, özellikle uzun süreli gözlem gerektiren projelerde avantaj sağlar. Değişen yıldızların ışık değişimlerinin takip edilmesi T60'ın önemli kullanım alanlarından biridir.
@@ -69,6 +71,8 @@ Tayfsal gözlemler ise yıldızların ve diğer gök cisimlerinin kimyasal bile�
 Modern astronomide bir gök cismini keşfetmek çoğu zaman tek bir teleskopla gerçekleştirilen tek bir gözlemden ibaret değildir. Farklı dalga boylarında çalışan teleskopların aynı kaynağı takip etmesi, gök cisminin fiziksel yapısının daha iyi anlaşılmasını sağlar.
 
 Bu nedenle TUG teleskopları da uzay tabanlı gözlemevleri tarafından belirlenen kaynakların yerden takip edilmesinde kullanılabilir. Özellikle X-ışını teleskopları tarafından tespit edilen kaynakların optik bölgede incelenmesi, bu cisimlerin yapısının ve doğasının belirlenmesine katkı sağlar.
+
+![TUG Yerleşkesi](/images/tug-yerleske.jpg)
 
 TUG'un geçmiş çalışmalarında **INTEGRAL, Swift ve Rusya'nın Spektr-RG (SRG) gibi uzay görevleri tarafından belirlenen yüksek enerjili kaynakların yer tabanlı takip gözlemleri** de önemli bir yer tutmuştur. Bu tür çalışmalar, farklı gözlemevlerinden elde edilen verilerin birleştirildiği çoklu dalgaboyu astronomisinin tipik örnekleridir.
 

@@ -23,6 +23,7 @@ Kraliçe (Cassiopeia) Takımyıldızı yönünde bulunan NGC 281, popüler adıy
 * **Toplam Entegrasyon Süresi:** Hidrojen: 32x180sn, Oksijen 39x180sn
 * **Yazılımlar:** Siril
 * **Çekim Konumu ve Tarih:** Topuklu Yaylası, Beyağaç, Denizli, 11-12 Ağustos 2026
+* **Fotoğraflayan:** Özgüç Bayrak
 
 ## Fotoğrafın Hikayesi
 Fotoğraf, 11-13 Ağustos 2026'da Topuklu Yaylası'nda gerçekleştirilen Ethem Hoca İle Gökyüzü Gözlem Etkinlikleri esnasında çekildi. O3 filtrelerle fotoğraf çekerken genelde yaşanan, parlak yıldızların etrafında haleler oluşması sorunundan asgari seviyede etkilenmek için, Pacman Bulutsusu hedef olarak seçildi. Kadrajda çok parlak yıldızlar olmamasına rağmen yine de bazı yıldızların "şişkin" olduğu görülebilir.
