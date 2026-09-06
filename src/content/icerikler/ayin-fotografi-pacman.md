@@ -2,7 +2,7 @@
 title: "Ayın Fotoğrafı: Pacman Bulutsusu (NGC 281)"
 category: "Ayın Fotoğrafı"
 pubDate: 2026-09-06T14:22:40.000+03:00
-image: "/images/pacman.png"
+image: "/images/pacman.jpg"
 importance: "Kraliçe Takımyıldızı yönünde, Dünya'dan yaklaşık 9.500 ışık yılı uzaklıkta bulunan ve aktif yıldız oluşumlarına ev sahipliği yapan devasa gaz kompleksinin Topuklu'dan kaydedilmiş detaylı görüntüsü."
 period: "Günümüz"
 ---
