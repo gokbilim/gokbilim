@@ -5,7 +5,7 @@ category: Gökbilim Kütüphanesi
 pubDate: 2026-09-05T12:30:00.000+03:00
 importance: Bu rehberde yıldızların fiziksel doğasını, nasıl oluştuklarını, enerji üretim mekanizmalarını, iç yapılarını ve kütlelerine bağlı olarak geçirdikleri evrimsel süreçleri incelemeye çalıştık.
 image: /images/gokbilim-kutuphanesi-yildizlar.jpg
--------------------------------------------------
+---
 
 Yıldız Nedir?
 
