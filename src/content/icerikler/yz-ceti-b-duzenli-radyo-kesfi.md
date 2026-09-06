@@ -1,5 +1,5 @@
 ---
-title: Ötegezegen YZ Ceti b'nin Manyetik Alanına Dair Radyo Sinyalleri
+title: Ötegezegen YZ Ceti b'nin Manyetik Alanına Dair Radyo Sinyalleri Tespit Edildi
 category: Haberler
 pubDate: 2026-09-05T12:00:00.000+03:00
 importance: Keşif, Güneş sistemi dışındaki kayalık gezegenlerin manyetik alanlarını doğrudan ölçmek zor olsa da, yıldızlarla gezegenleri arasındaki manyetik etkileşimlerden kaynaklanan radyo sinyalleri bu konuda önemli ipuçları sağlayabilir.

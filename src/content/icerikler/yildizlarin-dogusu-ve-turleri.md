@@ -6,7 +6,7 @@ importance: Bu rehberde yıldızların fiziksel doğasını, nükleer süreçler
 image: /images/gokbilim-kutuphanesi-yildizlar.jpg
 ---
 
-## Yıldız Nedir?
+Yıldız Nedir?
 
 Yıldızlar, kütleçekim kuvvetinin etkisiyle kendi üzerine çökmüş devasa plazma küreleridir. Fiziksel temelde, merkezlerinde gerçekleşen nükleer füzyon tepkimeleri sayesinde devasa miktarda enerji üreten ve ürettikleri enerjiyi uzaya elektromanyetik radyasyon olarak yayan karmaşık hidrotermal sistemlerdir. 
 
