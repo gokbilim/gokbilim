@@ -90,4 +90,4 @@ Gözlemevinin Antalya'daki Bilim ve Toplum Merkezi (BİTOM) de astronominin topl
 
 TUG bu yönüyle Türkiye'deki profesyonel astronomi araştırmaları ile amatör gökyüzü merakı arasında bir köprü oluşturur. Bakırlıtepe'deki teleskoplardan elde edilen bilimsel veriler, bir yandan yıldızların, gezegenlerin ve galaksilerin fiziksel doğasını anlamaya katkı sağlarken, diğer yandan Türkiye'de gözlemsel astronomi kültürünün gelişmesine yardımcı olur.
 
-## Bugün TUG, yüksek rakımlı Bakırlıtepe yerleşkesindeki teleskopları, teknik altyapısı ve araştırmacılara sunduğu gözlem olanaklarıyla Türkiye'nin gözlemsel astronomi altyapısının önemli merkezlerinden biri olmayı sürdürmektedir.
+Bugün TUG, yüksek rakımlı Bakırlıtepe yerleşkesindeki teleskopları, teknik altyapısı ve araştırmacılara sunduğu gözlem olanaklarıyla Türkiye'nin gözlemsel astronomi altyapısının önemli merkezlerinden biri olmayı sürdürmektedir.
