@@ -3,7 +3,7 @@ title: "Ayın Fotoğrafı: Pacman Bulutsusu (NGC 281)"
 category: "Ayın Fotoğrafı"
 pubDate: 2026-09-06T14:22:40.000+03:00
 image: "/images/pacman.jpg"
-importance: "Kraliçe Takımyıldızı yönünde, Dünya'dan yaklaşık 9.500 ışık yılı uzaklıkta bulunan vPacman Bulutsusunun amatör teleskopla Topuklu'dan çekilmiş fotoğrafı."
+importance: "Kraliçe Takımyıldızı yönünde, Dünya'dan yaklaşık 9.500 ışık yılı uzaklıkta bulunan Pacman Bulutsusunun amatör teleskopla Topuklu'dan çekilmiş fotoğrafı."
 period: "Günümüz"
 ---
 
@@ -25,7 +25,7 @@ Kraliçe (Cassiopeia) Takımyıldızı yönünde bulunan NGC 281, popüler adıy
 * **Çekim Konumu ve Tarih:** Topuklu Yaylası, Beyağaç, Denizli, 11-12 Ağustos 2026
 
 ## Fotoğrafın Hikayesi
-Fotoğraf, 11-13 Ağustos 2026'da Topuklu Yaylası'nda gerçekleştirilen Ethem Hoca İle Gökyüzü Gözlem Etkinlikleri esnasında çekildi. O3 filtrelerle fotoğraf çekerken genelde yaşanan, parlak yıldızların etrafında haleler oluşması sorunundan asgari seviyede etkilenmek için, Pacman Bulutsusu hedef olarak seçildi. Kadraja çok parlak yıldızlar olmamasına rağmen yine de bazı yıldızların "şişkin" olduğu görülebilir.
+Fotoğraf, 11-13 Ağustos 2026'da Topuklu Yaylası'nda gerçekleştirilen Ethem Hoca İle Gökyüzü Gözlem Etkinlikleri esnasında çekildi. O3 filtrelerle fotoğraf çekerken genelde yaşanan, parlak yıldızların etrafında haleler oluşması sorunundan asgari seviyede etkilenmek için, Pacman Bulutsusu hedef olarak seçildi. Kadrajda çok parlak yıldızlar olmamasına rağmen yine de bazı yıldızların "şişkin" olduğu görülebilir.
 
 ## İşleme Notları
-Fotoğraf Siril yazılımı kullanılarak işlendi. Temel anlamda; kalibrasyon, isitifleme, gürültü giderme (NoiseXTerminator), keskinleştirme (BlurXTerminator) seviye ayarlama, renk dengesi ayarlama ve yıldız küçültme işlemleri uygulandı.
+Fotoğraf Siril yazılımı kullanılarak işlendi. Temel anlamda; kalibrasyon, istifleme, gürültü giderme (NoiseXTerminator), keskinleştirme (BlurXTerminator) seviye ayarlama, renk dengesi ayarlama ve yıldız küçültme işlemleri uygulandı.

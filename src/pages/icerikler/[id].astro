@@ -62,9 +62,15 @@ const { Content } = await render(icerik);
           {icerik.data.title}
         </h1>
         
-        <!-- Görsel -->
+<!-- Görsel -->
         {icerik.data.image && (
-          <img src={icerik.data.image} alt={icerik.data.title} class="w-full rounded-2xl mb-10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-slate-800" />
+          icerik.data.category === 'Ayın Fotoğrafı' ? (
+            <a href={icerik.data.image} target="_blank" rel="noopener noreferrer">
+              <img src={icerik.data.image} alt={icerik.data.title} class="w-full rounded-2xl mb-10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-slate-800 hover:opacity-90 transition-opacity cursor-pointer" />
+            </a>
+          ) : (
+            <img src={icerik.data.image} alt={icerik.data.title} class="w-full rounded-2xl mb-10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-slate-800" />
+          )
         )}
         
 	<!-- Neden Önemli / Ön Bilgi Bölümü -->
