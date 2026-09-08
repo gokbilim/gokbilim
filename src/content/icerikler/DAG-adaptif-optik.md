@@ -1,0 +1,35 @@
+---
+title: "DAG Teleskobu, Adaptif Optik ve Kızılötesi Enstrümanlarla Bilimsel Gözlemlere Hazırlanıyor"
+category: Haberler
+pubDate: 2026-09-08T14:41:54.000+03:00
+importance: "Erzurum'daki Doğu Anadolu Gözlemevi'nin 4 metrelik DAG400 teleskobu, atmosferik türbülansın etkilerini azaltmak üzere geliştirilen adaptif optik sistemi TROIA ve yakın kızılötesi gözlem yapabilen DIRAC kamerasıyla birlikte çalışacak şekilde hazırlanıyor. Teleskop altyapısına eklenen PLACID koronagrafının 2026'da gerçekleştirdiği laboratuvar ve ön kabul testleri tamamlandı. Sistemin gökyüzü üzerinde devreye alınması TROIA'nın operasyonel hale gelmesine bağlı. İlk bilimsel gözlemlerin 2026 sonu veya 2027 başında başlaması hedefleniyor."
+image: /images/dag400-adaptive-optics.jpg
+---
+
+Erzurum'daki Karakaya Tepeleri üzerinde, deniz seviyesinden 3170 metre yükseklikte bulunan Doğu Anadolu Gözlemevi (DAG), Türkiye'nin en büyük astronomik teleskobuna ev sahipliği yapıyor. DAG400 olarak adlandırılan teleskop, 4 metre çapındaki ana aynasıyla hem görünür ışıkta hem de yakın kızılötesi dalga boylarında gözlem yapmak üzere tasarlandı. 
+
+Türkiye Ulusal Gözlemevleri'nin güncel verilerine göre, DAG yerleşkesinin kurulumu 2024 yılında tamamlandı ve 2025 yılında test gözlemleri başladı. DAG400'ün gözlem altyapısı aktif ve adaptif optik teknolojilerini entegre biçimde kullanıyor. Bu sayede teleskop, devasa toplama alanını atmosferin görüntü kalitesi üzerindeki bozucu etkilerini azaltma yeteneğiyle birleştiriyor. Teleskop görünür bölgenin yanı sıra yakın kızılötesi bölgede çalışabilecek altyapıyla donatıldı. Söz konusu teknoloji, Dünya atmosferinin ve yıldızlararası tozun görünür ışığı engellediği veya zayıflattığı astronomik kaynakların incelenmesine olanak sağlayacak.
+
+Yer tabanlı teleskopların karşılaştığı temel sorun Dünya atmosferidir. Atmosferdeki sıcaklık ve yoğunluk farklılıkları, yıldızlardan gelen ışığın dalga cephesini sürekli olarak değiştirir. Sonuçta teleskop optik olarak çok yüksek çözünürlüğe sahip olsa bile atmosfer görüntüyü bulanıklaştırır. DAG400'ün bu sorunu azaltmak için kullandığı TROIA (TuRkish adaptive Optics system for Infrared Astronomy) sistemi, atmosferin oluşturduğu dalga cephesi bozulmalarını ölçerek teleskop sistemindeki uyarlanabilir aynayı sürekli olarak düzeltmek üzere geliştirildi.
+
+TROIA donanımında 468 aktüatörlü şekil değiştirebilen ayna ve atmosferik bozulmaları ölçen piramit tipinde dalga cephesi sensörü yer alıyor. Türkiye Ulusal Gözlemevleri'nin teknik değerlendirmelerine göre, sistemin J, H ve K bantlarında sırasıyla yüzde 83, yüzde 90 ve yüzde 94 Strehl oranlarına ulaşması hedefleniyor. Bu teknoloji, teleskobun atmosferik koşulların izin verdiği ölçüde kırınım sınırlı görüntülemeye yaklaşmasını sağlayabilir.
+
+Adaptif optik sisteminin ardından ışığı alacak önemli enstrümanlar arasında DIRAC (DAG Infra Red Adaptive-Optics Camera) bulunuyor. DIRAC, yakın kızılötesi bölgede yüksek çözünürlüklü görüntüler elde etmek üzere tasarlandı. 0,9 ile 2,4 mikrometre arasındaki dalga boylarında çalışabilen sistemde Teledyne H1RG tipi dedektör kullanılıyor. Kamera Y, J, H ve K bantlarında gözlem yapabilecek. İlgili dalga boyları; yıldız oluşum bölgeleri, yıldız sistemleri ve galaksiler gibi farklı astronomik kaynakların incelenmesinde kritik veriler sağlayabiliyor. 
+
+DAG'ın bilimsel kapasitesini artıracak sistemler arasında PLACID (Programmable Liquid-crystal Active Coronagraphic Imager) öne çıkıyor. PLACID, yıldızların parlaklığını bastırarak yıldızın hemen yakınındaki daha sönük cisimlerin veya yapıların gözlenmesini kolaylaştırmak üzere tasarlanmış aktif koronagraf sistemidir. Donanım, TROIA adaptif optik sistemi ile DIRAC kızılötesi dedektörü arasına yerleştiriliyor. PLACID sisteminin en önemli özelliği, koronagrafın odak düzlemindeki faz maskesini fiziksel olarak değiştirmek yerine uzaysal ışık modülatörü kullanarak yazılımla değiştirebilmesi. 
+
+2025 yılında DAG'ın Nasmyth platformuna kurulan PLACID'in optik hizalama ve ön kabul testleri 2026'nın ilk aylarında gerçekleştirildi. Ağustos 2026'da yayımlanan güncel teknik çalışmaya göre, sistemin gökyüzü üzerindeki devreye alınma (commissioning) süreci, TROIA adaptif optik sisteminin operasyonel hale gelmesini bekliyor. Araştırma ekibi, PLACID ile ilk bilimsel gözlemlere 2026'nın sonlarında veya 2027'nin başlarında başlanmasını hedefliyor.
+
+Ötegezegenleri doğrudan görüntülemek, astronomideki en zorlu gözlem problemleri arasında yer alıyor. Sorunun temelinde devasa parlaklık farkı bulunuyor. Bu nedenle teleskobun yüksek çözünürlüğe sahip olması tek başına yeterli olmuyor. Yıldız ışığının mümkün olduğunca bastırılması ve atmosferin oluşturduğu görüntü bozulmalarının eşzamanlı azaltılması gerekiyor. DAG400'de TROIA ile adaptif optik düzeltmenin, PLACID ile koronagrafik yıldız ışığı bastırmanın ve DIRAC ile kızılötesi görüntülemenin entegrasyonu tam olarak bu probleme yönelik gözlem altyapısı oluşturuyor.
+
+DAG'ın yeni nesil optik sistemleri kritik mühendislik aşamalarına ulaşmış olsa da bu gelişmeleri tamamlanmış bilimsel sonuçlar olarak değerlendirmek için henüz erken. PLACID'in 2026'da gerçekleştirilen çalışmaları ağırlıklı olarak optik hizalama, kalibrasyon ve ön kabul testlerini kapsıyor. Sistem henüz gökyüzü üzerinde rutin bilimsel gözlem gerçekleştirmiş değil. Dolayısıyla DAG'ın önümüzdeki dönemde sağlayacağı bilimsel veriler, sistemlerin gökyüzü üzerindeki performansının doğrulanmasından sonra ortaya çıkacak.
+
+4 metrelik ana ayna, yakın kızılötesi gözlem donanımı, adaptif optik ve yüksek kontrastlı görüntüleme sistemlerinin entegrasyonu; DAG'ın konumunu standart gözlem aracından öteye taşıyarak onu gelişmiş astronomik araştırma platformuna dönüştürüyor. Önümüzdeki dönem, DAG için mühendislik çalışmalarından bilimsel gözlem evresine geçiş açısından belirleyici olacak. TROIA ve ona bağlı kızılötesi enstrümanlar planlandığı şekilde devreye alınırsa, Erzurum'daki tesis Türkiye'nin astronomi araştırmalarında yeni gözlem döneminin kapısını açabilir.
+
+Kaynaklar
+
+* [Türkiye Ulusal Gözlemevleri – DAG400 Teleskobu](https://trgozlemevleri.gov.tr/teleskoplar/erzurum/dag400?utm_source=gokbilim.net)
+* [Türkiye Ulusal Gözlemevleri – Erzurum DAG Yerleşkesi](https://trgozlemevleri.gov.tr/teleskoplar/erzurum?utm_source=gokbilim.net)
+* [Türkiye Ulusal Gözlemevleri – 2026 Teleskoplar ve Odak Düzlemi Aygıtları Bülteni](https://arxiv.org/abs/2608.28226?utm_source=gokbilim.net)
+* [The Programmable Liquid-crystal Active Coronagraphic Imager for the 4-m DAG telescope (PLACID) instrument: installation and commissioning update](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13627/136270Z/The-programmable-liquid-crystal-active-coronagraphic-imager-for-the-4/10.1117/12.3063059.full?utm_gokbilim.net)
+* [AMOS – DAG 4-m Telescope Project Completion and Instrumentation Update](https://atasam.atauni.edu.tr/tubitak_3501/?utm_source=gokbilim.net)
