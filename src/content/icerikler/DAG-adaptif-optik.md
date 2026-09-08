@@ -2,7 +2,7 @@
 title: "DAG Teleskobu, Adaptif Optik ve Kızılötesi Enstrümanlarla Bilimsel Gözlemlere Hazırlanıyor"
 category: Haberler
 pubDate: 2026-09-08T14:41:54.000+03:00
-importance: "Erzurum'daki Doğu Anadolu Gözlemevi'nin 4 metrelik DAG400 teleskobu, atmosferik türbülansın etkilerini azaltmak üzere geliştirilen adaptif optik sistemi TROIA ve yakın kızılötesi gözlem yapabilen DIRAC kamerasıyla birlikte çalışacak şekilde hazırlanıyor. Teleskop altyapısına eklenen PLACID koronagrafının 2026'da gerçekleştirdiği laboratuvar ve ön kabul testleri tamamlandı. Sistemin gökyüzü üzerinde devreye alınması TROIA'nın operasyonel hale gelmesine bağlı. İlk bilimsel gözlemlerin 2026 sonu veya 2027 başında başlaması hedefleniyor."
+importance: "Erzurum'daki Doğu Anadolu Gözlemevi'nin 4 metrelik DAG400 teleskobu altyapısına eklenen PLACID koronagrafının 2026'da gerçekleşen laboratuvar ve ön kabul testleri tamamlandı. İlk bilimsel gözlemlerin 2026 sonu veya 2027 başında başlaması hedefleniyor."
 image: /images/dag400-adaptive-optics.jpg
 ---
 
