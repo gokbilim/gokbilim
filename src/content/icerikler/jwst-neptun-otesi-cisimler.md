@@ -1,7 +1,7 @@
 ---
 title: "James Webb, Neptün Ötesindeki 27 Yeni Gökcismini Ortaya Çıkardı"
 category: Haberler
-pubDate: 2026-09-10T11:30:00.000+03:00
+pubDate: 2026-09-09T11:30:00.000+03:00
 importance: "James Webb Uzay Teleskobu'nun NIRCam kamerasıyla yapılan derin bir taramada, Neptün'ün ötesinde daha önce gözlenemeyen 27 trans-Neptün cismi tespit edildi. Çalışma, Güneş Sistemi'nin küçük ve uzak gökcisimlerinin dağılımını incelemek için önemli veriler sağlıyor."
 image: /images/jwst-neptun-otesi-cisimler.jpg
 ---
