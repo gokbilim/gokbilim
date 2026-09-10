@@ -1,7 +1,7 @@
 ---
 title: "Doğu Anadolu Gözlemevi (DAG): Türkiye'nin Yeni Evrene Açılan Yeni Penceresi"
 category: Gözlemevleri
-pubDate: 2026-09-08T09:00:00.000+03:00
+pubDate: "2026-09-08T09:00:00.000+03:00"
 image: "/images/dag-gozlemevi.jpg"
 importance: "Erzurum'daki Doğu Anadolu Gözlemevi, 3.170 metre rakımdaki konumuyla Türkiye'nin en büyük teleskobu DAG400'e ev sahipliği yapıyor. Gözlemevinin 4 metrelik teleskobu, adaptif optik ve yakın kızılötesi gözlem yetenekleriyle Türkiye'nin astronomi araştırmalarında yeni bir dönem açıyor."
 ---
