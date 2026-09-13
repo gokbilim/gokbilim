@@ -2,7 +2,7 @@
 title: "Karadelikler: Işığın Bile Kaçamadığı Gökcisimleri"
 category: Gökbilim Kütüphanesi
 pubDate: 2026-09-13T12:30:00.000+03:00
-importance: "Karadelikler, kütleçekiminin uzay ve zamanın yapısının olağanüstü ölçekte değiştiği  kozmik yapılardır. Çevrelerindeki yıldızların hareketlerinden yayılan X-ışınlarına ve uzay-zamanda ilerleyen kütleçekim dalgalarına kadar birçok farklı gözlem, bu görünmez cisimlerin varlığını ortaya koyar. Karadelikleri anlamak, Einstein'ın kütleçekim kuramının sınırlarını ve henüz çözemediğimiz fizik problemlerini anlamanın temel yollarından biridir."
+importance: "Karadelikler, uzay ve zaman dokusunun olağanüstü ölçekte değiştiği kozmik yapılardır. Karadelikleri anlamak, Einstein'ın kütleçekim kuramının sınırlarını ve henüz çözemediğimiz fizik problemlerini kavramanın temel yollarından biridir."
 image: /images/gokbilim-kutuphanesi-karadelikler.jpg
 ---
 
