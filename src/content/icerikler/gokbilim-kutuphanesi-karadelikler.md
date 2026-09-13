@@ -20,7 +20,7 @@ Bir karadeliği tanımlayan en önemli sınır **olay ufku**dur. Olay ufku, bir 
 
 Karadeliklerin oluşmasının en iyi anlaşılan yollarından biri, çok büyük kütleli yıldızların yaşamlarının sonunda gerçekleşen çekirdek çökmesidir. Bir yıldız yaşamı boyunca çekirdeğinde nükleer füzyon gerçekleştirir. Bu süreç, yıldızın kendi kütleçekimine karşı koymasına yardımcı olan enerjiyi ve basıncı üretir. Ancak yıldızın çekirdeğinde füzyon için kullanılabilecek yakıt tükendiğinde denge bozulur.
 
-Yakıtı tükenen yıldız, kendi kütleçekimi altında çökmeye başlar. Bu sürecin sonunda dış katmanlar uzaya savrulur ve yıldız yeterenice büyük kütleye sahipse büyük bir süpernova patlaması meydana gelir. Geriye kalan çekirdek hala büyük bir kütleye sahipse, bilinen kuvvetler çöküşü durduramaz ve bir karadelik oluşur.
+Yakıtı tükenen yıldız, kendi kütleçekimi altında çökmeye başlar. Bu sürecin sonunda dış katmanlar uzaya savrulur ve yıldız yeterince büyük kütleye sahipse büyük bir süpernova patlaması meydana gelir. Geriye kalan çekirdek hâlâ büyük bir kütleye sahipse, bilinen kuvvetler çöküşü durduramaz ve bir karadelik oluşur.
 
 Bununla birlikte bütün karadelikler aynı şekilde oluşmaz. Galaksilerin merkezlerinde bulunan milyonlarca, hatta milyarlarca Güneş kütlesindeki **süper kütleli karadeliklerin** nasıl ortaya çıktığı hâlâ araştırılan önemli bir problemdir. Evrenin çok erken dönemlerinde zaten büyük kütleli karadeliklerin bulunması, bunların oluşumu ve büyümesi hakkında hâlâ cevaplanmamış sorular olduğunu gösteriyor.
 
@@ -56,7 +56,7 @@ Karadeliğin iç kısmında tam olarak ne olduğunu ise bugün kesin olarak bilm
 
 Genel görelilik denklemleri, karadeliğin merkezinde **tekillik** adı verilen ve yoğunluğun matematiksel olarak sonsuza gittiği bir durum öngörür. Ancak bu ifadeyi fiziksel bir gerçek olarak kabul etmekte dikkatli olmak gerekir.
 
-Tekillik, genel göreliliğin böyle aşırı koşullarda artık yeterli olmayabileceğinin işareti olabilir. Çünkü genel görelilik büyük ölçekli kütleçekimini son derece başarılı biçimde açıklarken, atom altı dünyanın kurallarını açıklayan kuantum fiziğiyle henüz tam anlamnıyla birleştirilebilmiş değildir.
+Tekillik, genel göreliliğin böyle aşırı koşullarda artık yeterli olmayabileceğinin işareti olabilir. Çünkü genel görelilik büyük ölçekli kütleçekimini son derece başarılı biçimde açıklarken, atom altı dünyanın kurallarını açıklayan kuantum fiziğiyle henüz tam anlamıyla birleştirilebilmiş değildir.
 
 Bu nedenle karadeliğin merkezinde gerçekten fiziksel bir "sonsuz yoğunluk noktası" bulunup bulunmadığını bilmiyoruz. Karadeliklerin iç yapısını anlamak, modern fiziğin en önemli açık problemlerinden biridir.
 
@@ -116,7 +116,7 @@ Einstein'ın genel görelilik kuramına göre kütle ve enerji, uzay-zamanın ge
 
 Karadeliklerin yakınında bu etkiler olağanüstü boyutlara ulaşır.
 
-![Kütleçekim Dalgaları(/images/gokbilim-kutuphanesi-karadelikler-3.jpg)
+![Kütleçekim Dalgaları](/images/gokbilim-kutuphanesi-karadelikler-3.jpg)
 
 Işık bükülür. Zaman farklı hızlarda akar. Madde aşırı sıcaklıklara ulaşabilir. İki karadeliğin birleşmesi uzay-zamanda ölçülebilir dalgalar oluşturabilir.
 
