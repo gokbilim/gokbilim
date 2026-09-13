@@ -6,9 +6,6 @@ importance: "Karadelikler, kütleçekiminin uzay ve zamanın yapısının olağa
 image: /images/gokbilim-kutuphanesi-karadelikler.jpg
 ---
 
-# Karadelikler: Işığın Bile Kaçamadığı Evren Bölgeleri
-
-
 Gökyüzüne baktığımızda yıldızları, galaksileri ve bulutsuları görebiliriz. Karadelikler ise bu açıdan farklıdır. Kendileri ışık yaymadıkları için doğrudan görülemezler. Buna karşın evrendeki en güçlü kütleçekim kaynaklarındandırlar.
 
 Bir karadeliğin çevresine baktığımızda, aslında karadeliğin kendisini değil, onun uzay-zamanı nasıl değiştirdiğini ve çevresindeki maddeyi nasıl etkilediğini görürüz.
