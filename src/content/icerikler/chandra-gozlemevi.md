@@ -24,6 +24,8 @@ X-ışınları son derece yüksek enerjiye sahiptir. Tıbbi cihazlarda insan vü
 
 Chandra, Hubble Uzay Teleskobu gibi Dünya'ya yakın yörüngede dolanmaz. Görevi için özel tasarlanmış oldukça geniş, eliptik yörüngeye yerleştirilmiştir. Yörüngenin en uzak noktası Dünya'dan Dünya-Ay mesafesinin üçte birine kadar uzanır. Yörüngenin bu denli geniş olmasının temel sebebi, teleskobun Dünya'nın etrafını saran yoğun radyasyon kuşaklarının dışında kalarak bilimsel gözlemlerini kesintisiz yürütebilmesidir. Teleskop, yörüngesindeki tek tam turu yaklaşık 64 saatte tamamlar; bunun 55 saatlik diliminde hassas detektörlerine zarar verebilecek radyasyon etkilerinden tamamen uzak kalarak evrenin derinliklerini aralıksız seyreder.
 
+![Chandra Yörüngesi](/images/chandra-gozlemevi-3.jpg)
+
 ### Kozmik Elementlerin Peşinde: Süpernova Kalıntıları
 
 Teleskobun faaliyete geçtikten sonra kaydettiği ilk resmi görüntü olan Cassiopeia A (Cas A) süpernova kalıntısı, X-ışını astronomisinde dönüm noktası sayılır. Yaklaşık üç yüz yıl önce patlamış devasa yıldızın geride bıraktığı dev enkaz, Chandra’nın donanımıyla ilk kez bu kadar net haritalandırılmıştır. Spektrometre verileri kullanılarak enkazın içindeki oksijen, demir, neon, silikon gibi ağır elementlerin dağılımı renklerle kodlanarak ayrıştırılmıştır. Gezegenimizin, kanımızdaki demirin, kemiklerimizdeki kalsiyumun kökenini anlamak için kozmik patlamaların dinamiklerini çözmek şarttır. Gözlemevi, evrenin devasa fırınları işlevi gören yıldızların, ölüm anlarında yaşama dair temel yapıtaşlarını uzay boşluğuna nasıl fırlattığını muazzam çözünürlükle kanıtlamıştır.
@@ -36,7 +38,7 @@ Modern kozmolojinin en büyük gizemlerinden karanlık madde, doğrudan gözleml
 
 Samanyolu galaksisinin merkezinde uyuyan dev Sagittarius A* kara deliği, on yıllardır astronomların odak noktasındadır. Dünya'dan yaklaşık 26.000 ışık yılı uzaklıkta yer alan galaksi çekirdeğini optik teleskoplarla gözlemlemek imkansızdır. Aradaki yoğun gaz ve kozmik toz bulutları görünür ışığın bize ulaşmasını engeller. Chandra'nın hassas detektörleri ise bu kalın perdeyi delip geçmeyi başarır. Yüksek enerjili X-ışınları, toz zerreleri tarafından emilmeden doğrudan teleskobun silindirik aynalarına ulaşarak milyonlarca derece sıcaklıktaki plazma yapısını eşsiz netlikte ortaya çıkarır.
 
-![Karadelik Yığılım Diski](/images/chandra-gozlemevi-3.jpg)
+![Karadelik Yığılım Diski](/images/chandra-gozlemevi-4.jpg)
 
 #### Yığılım Diski (Accretion Disk) Fiziği
 
@@ -46,7 +48,7 @@ Kara deliklerin kendisi ışıma yapmaz. Gözlemlediğimiz X-ışınları, muazz
 
 Gözlemevinin çarpıcı keşifleri arasında galaksi merkezinden gelen ani enerji patlamaları bulunur. Düzenli izlemeler sırasında Sgr A*'nın röntgen parlaklığının birkaç saat içinde aniden onlarca kat artıp ardından hızla sönümlendiği tespit edilmiştir. Astrofizikçiler parlamaların temelinde manyetik alan dinamiklerinin yattığını düşünmektedir. Olay ufkuna çok yakın mesafelerde birbirine dolanan manyetik alan çizgileri aniden koparak yeniden birleşir. Manyetik kopmalar diskin iç kısımlarındaki elektronları ışık hızına yakın seviyelere kadar hızlandırarak devasa X-ışını patlamalarını tetikler.
 
-![X Işını Gözlemleri](/images/chandra-gozlemevi-4.jpg)
+![X Işını Gözlemleri](/images/chandra-gozlemevi-5.jpg)
 
 #### Işık Yankılarıyla Geçmişi Okumak
 
@@ -60,7 +62,7 @@ Chandra, Sagittarius A* kara deliğinin gölgesini görüntüleyerek tarihe geç
 
 ### Kozmolojide Çok Dalga Boylu Yaklaşım ve Beklenen Ömrü Aşan Başarı
 
-![X Işını Gözlemleri](/images/chandra-gozlemevi-4.jpg)
+![X Işını Gözlemleri](/images/chandra-gozlemevi-6.jpg)
 
 Günümüz astronomisi, tek dalga boyunda yapılan gözlemlerin evreni tam manasıyla açıklayamayacağı prensibine dayanır. Chandra'nın sağladığı veriler; Hubble'ın optik görüntüleri, James Webb'in kızılötesi verileri, radyo teleskopların düşük frekanslı haritalarıyla harmanlanmaktadır. Başlangıçta beş yıl görev yapması planlanan teleskop, üstün mühendislik tasarımı sayesinde yirmi beş yılı aşkın süredir insanlığa hizmet etmektedir. Yaşlanan cayroskoplar, azalan itici gaz rezervleri, uzay radyasyonunun yarattığı yıpranmalara rağmen operasyonlar yeni yazılım algoritmalarıyla başarıyla sürdürülmektedir.
 
