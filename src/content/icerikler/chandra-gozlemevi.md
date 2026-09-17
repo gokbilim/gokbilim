@@ -2,7 +2,7 @@
 title: "Evrenin Görünmez Şiddetini Açığa Çıkaran Gözlemevi: Chandra"
 category: "Gözlemevleri"
 pubDate: 2026-09-17T19:24:13.000+03:00
-importance: "Dünya yörüngesine konumlandırılmış Chanda Gözlemevi, X-ışını dalga boyunda yaptığı gözlemlerle yüksek enerjili olayları, kara deliklerin etrafındaki yığılım disklerini ve süpernova kalıntılarını inceleyerek evrene bakışımızı değiştirecek için kritik veriler sunmaktadır."
+importance: "Dünya yörüngesine konumlandırılmış Chanda Gözlemevi, X-ışını dalga boyunda yaptığı gözlemlerle yüksek enerjili kozmik olayları, kara deliklerin etrafındaki yığılım disklerini ve süpernova kalıntılarını inceleyerek evrene bakışımızı değiştirecek için kritik veriler sunmaktadır."
 image: "/images/chandra-gozlemevi-1.jpg"
 ---
 
