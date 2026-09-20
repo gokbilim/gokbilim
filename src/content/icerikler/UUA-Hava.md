@@ -62,7 +62,7 @@ Bu süreç tam anlamıyla kapalı bir döngü oluşturmaz. Sistemde çeşitli ka
 Tam olarak değil.
 Astronotların uzay yürüyüşleri sırasında kullandıkları uzay giysilerinin ihtiyaç duyduğu oksijen, kabin atmosferindeki oksijenden farklı bir lojistik gerektirir. Uzay giysileri yüksek basınçlı oksijenle beslenir ve bu nedenle istasyonun normal kabin basıncındaki oksijen üretim sisteminden farklı depolama ve basınçlandırma çözümleri kullanılır.
 
-![EVA](/images/iss-hava-3.jpg)
+![EVA](/images/iss-hava-4.jpg)
 
 NASA'nın teknik dokümanlarında, UUİ'nin hava kilidi çevresinde yüksek basınçlı oksijen ve azot depolamak için kullanılan sistemlerden ve ikmal araçlarıyla getirilen gazlardan söz edilir.
 Bu gazlar gerektiğinde uzay yürüyüşlerinin yanı sıra acil durumlar ve çeşitli teknik sistemler için de kullanılabilir.
