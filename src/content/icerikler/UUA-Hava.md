@@ -6,7 +6,6 @@ importance: "Uluslararası Uzay İstasyonu'nda yaşamın sürdürülebilmesi iç
 image: "/images/iss-hava.jpg"
 ---
 
-## Uluslararası Uzay İstasyonu'na Hava Nereden Geliyor?
 Uluslararası Uzay İstasyonu'nda astronotların soluyabileceği havanın Dünya'dan sürekli olarak şişirilmiş tüplerle gönderildiğini düşünmek kolaydır. Gerçekte sistem bundan daha karmaşıktır. İstasyondaki hava sürekli dolaştırılır, karbondioksitten ve diğer kirleticilerden temizlenir, suyun bir bölümü yeniden kullanılır ve oksijenin önemli bir kısmı istasyonun kendi sistemleri tarafından üretilir. Bunun yanında atmosferdeki gazların dengesini korumak ve kayıpları telafi etmek için Dünya'dan düzenli olarak gaz ikmali yapılır.
 Bu nedenle Uluslararası Uzay İstasyonu'na "hava götürmek", aslında birbirini tamamlayan birkaç farklı işlemin birleşimidir.
 
