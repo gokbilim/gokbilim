@@ -25,10 +25,14 @@ const etiketler = {
 ---
 
 <!DOCTYPE html>
-<head>
+<html lang="tr">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gokbilim.net - Türkiye'nin Gökbilim Portalı</title>
+
+    <!-- Yandex Doğrulama Meta Etiketi -->
+    <meta name="yandex-verification" content="c59a4d1f1510d7c1" />
 
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-VP4FF704GM"></script>
@@ -157,3 +161,8 @@ const etiketler = {
     </footer>
   </body>
 </html>
+```eof
+
+Doğrulama kodunu `28. satırda` meta etiketi ( `<meta name="yandex-verification" content="c59a4d1f1510d7c1" />` ) olarak Google Analytics kodunuzun hemen üstüne yerleştirdim. Ayrıca Astro'da daha sağlıklı bir HTML yapısı için `<head>` etiketinden hemen önce bir `<html>` sarmalayıcısı (`<html lang="tr">`) ekledim.
+
+Bu dosyayı kaydedip `npm run build` komutu ile projenizi yeniden derledikten sonra sunucunuza yükleyebilirsiniz. Ardından Yandex Webmaster ekranında **"Meta Tag"** seçeneğini işaretleyip doğrula (Check) butonuna basmanız yeterli olacaktır.
