@@ -3,6 +3,8 @@ import '../styles/global.css';
 import { getCollection } from 'astro:content';
 import Navbar from '../components/Navbar.astro';
 
+export const prerender = true;
+
 // Sayfalama için getStaticPaths zorunludur
 export async function getStaticPaths({ paginate }) {
   const butunIcerikler = await getCollection('icerikler');

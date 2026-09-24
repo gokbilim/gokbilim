@@ -1,8 +1,9 @@
 ---
 import { getCollection, render } from 'astro:content';
 import '../../styles/global.css';
-import Navbar from '../../components/Navbar.astro'; 
+import Navbar from '../../components/Navbar.astro';
 
+export const prerender = true; 
 export async function getStaticPaths() {
   const butunIcerikler = await getCollection('icerikler');
   
