@@ -83,7 +83,7 @@ const etiketler = {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Döngü artık 'sonIcerikler' yerine 'page.data' üzerinden çalışıyor -->
           {page.data.map((icerik) => (
-            <a href={`/icerikler/${icerik.id}`} class="group block h-full">
+            <a href={`/icerikler/${icerik.id.replace('.md', '')}`} class="group block h-full">
               <article class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col h-full relative">
                 
                 {icerik.data.category && (
