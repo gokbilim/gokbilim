@@ -12,8 +12,8 @@ export async function getStaticPaths() {
     { slug: 'gozlemevleri', name: 'Gözlemevleri' },
     { slug: 'etkinlikler', name: 'Etkinlikler' },
     { slug: 'ayin-fotografi', name: 'Ayın Fotoğrafı' },
-    { slug: 'gokbilim-tarihi', name: 'Gökbilim Tarihi' }, // Menüyle uyumlu slug güncellendi
-    { slug: 'gokbilim-kutuphanesi', name: 'Gökbilim Kütüphanesi' } // Menüyle uyumlu slug güncellendi
+    { slug: 'tarih', name: 'Gökbilim Tarihi' }, // Orijinal haline (tarih) geri döndürüldü
+    { slug: 'kutuphane', name: 'Gökbilim Kütüphanesi' } // Orijinal haline (kutuphane) geri döndürüldü
   ];
 
   return kategoriler.map(({ slug, name }) => {
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
       .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
     return {
-      params: { category: slug },
+      params: { category: slug }, // [category].astro dosya adıyla eşleşen parametre
       props: { kategoriAdi: name, icerikler: filtrelenmis },
     };
   });
