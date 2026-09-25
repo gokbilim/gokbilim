@@ -12,8 +12,8 @@ export async function getStaticPaths() {
     { slug: 'gozlemevleri', name: 'Gözlemevleri' },
     { slug: 'etkinlikler', name: 'Etkinlikler' },
     { slug: 'ayin-fotografi', name: 'Ayın Fotoğrafı' },
-    { slug: 'tarih', name: 'Gökbilim Tarihi' },
-    { slug: 'kutuphane', name: 'Gökbilim Kütüphanesi' }
+    { slug: 'gokbilim-tarihi', name: 'Gökbilim Tarihi' }, // Menüyle uyumlu slug güncellendi
+    { slug: 'gokbilim-kutuphanesi', name: 'Gökbilim Kütüphanesi' } // Menüyle uyumlu slug güncellendi
   ];
 
   return kategoriler.map(({ slug, name }) => {
@@ -56,7 +56,8 @@ const { kategoriAdi, icerikler } = Astro.props;
       {icerikler.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {icerikler.map((icerik) => (
-            <a href={`/icerikler/${icerik.id}`} class="group block h-full">
+            <!-- DEĞİŞİKLİK BURADA: .replace('.md', '') metodu eklendi -->
+            <a href={`/icerikler/${icerik.id.replace('.md', '')}`} class="group block h-full">
               <article class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col h-full relative">
                 
                 {icerik.data.image ? (
@@ -74,13 +75,13 @@ const { kategoriAdi, icerikler } = Astro.props;
                     {icerik.data.title}
                   </h3>
                   
-		{icerik.data.importance && (
-  		  <div class="bg-amber-950/30 border-l-2 border-amber-500 p-3 mb-4 rounded-r-md">
-    		  <p class="text-sm text-amber-400">
-			<strong>{['Gökbilim Tarihi', 'Gözlemevleri', 'Gökbilim Kütüphanesi', 'Ayın Fotoğrafı'].includes(icerik.data.category) ? 'Ön Bilgi:' : 'Neden Önemli:'}</strong> {icerik.data.importance}
-    		  </p>
-  		</div>
-		)}
+        {icerik.data.importance && (
+          <div class="bg-amber-950/30 border-l-2 border-amber-500 p-3 mb-4 rounded-r-md">
+            <p class="text-sm text-amber-400">
+            <strong>{['Gökbilim Tarihi', 'Gözlemevleri', 'Gökbilim Kütüphanesi', 'Ayın Fotoğrafı'].includes(icerik.data.category) ? 'Ön Bilgi:' : 'Neden Önemli:'}</strong> {icerik.data.importance}
+            </p>
+        </div>
+        )}
                   
                   <p class="text-slate-400 text-sm line-clamp-3 mb-4 flex-grow">
                     {icerik.body.substring(0, 150)}...

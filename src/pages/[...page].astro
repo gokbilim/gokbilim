@@ -60,7 +60,7 @@ const etiketler = {
           <!-- Görselin opaklığı %100 yapıldı, artık tüm aydınlığıyla görünecek -->
           <img src="/images/hero-bg.jpg" alt="Uzay Arka Planı" class="w-full h-full object-cover opacity-100" />
           
-          <!-- Karartma efekti iyice hafifletildi, sadece okunabilirlik için alt kısımda ince bir katman bırakıldı -->
+          <!-- Karartma efekti iyice hafifletildi, sadece okunabilirlik için alt kısımda ince katman bırakıldı -->
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
         </div>
 
@@ -83,9 +83,9 @@ const etiketler = {
       <!-- Ortak İçerik Akışı Bölümü -->
       <section id="icerik-akisi">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Döngü artık 'sonIcerikler' yerine 'page.data' üzerinden çalışıyor -->
           {page.data.map((icerik) => (
-            <a href={`/icerikler/${icerik.id}`} class="group block h-full">
+            <!-- DEĞİŞİKLİK BURADA YAPILDI: .replace('.md', '') eklendi -->
+            <a href={`/icerikler/${icerik.id.replace('.md', '')}`} class="group block h-full">
               <article class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col h-full relative">
                 
                 {icerik.data.category && (
@@ -130,7 +130,7 @@ const etiketler = {
           ))}
         </div>
 
-        <!-- YENİ EKLENEN BÖLÜM: Sayfalama (Pagination) Tuşları -->
+        <!-- Sayfalama (Pagination) Tuşları -->
         { (page.url.prev || page.url.next) && (
           <nav class="flex items-center justify-between border-t border-slate-800 mt-16 pt-8">
             <div class="flex-1">
