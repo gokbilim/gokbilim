@@ -22,8 +22,8 @@ Yapılan optik düzeltmelerin ardından cihaz tasarlandığı tam gözlem kapasi
 
 Kaynaklar
 
-* [1] [A Brief History of the Hubble Space Telescope - NASA](https://www.nasa.gov/history/hubble/)
-* [2] [Hubble's Mirror Flaw - NASA Science](https://science.nasa.gov/mission/hubble/observatory/design/optics/hubbles-mirror-flaw/)
-* [3] [STS-61 - NASA](https://www.nasa.gov/mission/sts-61/)
-* [4] [Servicing Mission 1 (SM1) - NASA Science](https://science.nasa.gov/mission/hubble/observatory/missions-to-hubble/servicing-mission-1/)
-* [5] [30 Years Ago: Hubble Launched to Unlock the Secrets of the Universe](https://www.nasa.gov/missions/hubble/30-years-ago-hubble-launched-to-unlock-the-secrets-of-the-universe/)
+* [A Brief History of the Hubble Space Telescope - NASA](https://www.nasa.gov/history/hubble/)
+* [Hubble's Mirror Flaw - NASA Science](https://science.nasa.gov/mission/hubble/observatory/design/optics/hubbles-mirror-flaw/)
+* [STS-61 - NASA](https://www.nasa.gov/mission/sts-61/)
+* [Servicing Mission 1 (SM1) - NASA Science](https://science.nasa.gov/mission/hubble/observatory/missions-to-hubble/servicing-mission-1/)
+* [30 Years Ago: Hubble Launched to Unlock the Secrets of the Universe](https://www.nasa.gov/missions/hubble/30-years-ago-hubble-launched-to-unlock-the-secrets-of-the-universe/)
