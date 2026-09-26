@@ -1,35 +1,37 @@
 ---
 import { getCollection } from 'astro:content';
-import '../../styles/global.css';
-import Navbar from '../../components/Navbar.astro'; // Yeni menü bileşenimizi ekledik
+import '../../../styles/global.css'; // Yol derinliği güncellendi
+import Navbar from '../../../components/Navbar.astro'; // Yol derinliği güncellendi
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ paginate }) {
   const butunIcerikler = await getCollection('icerikler');
 
-  // "Haftanın Fotoğrafı" burada "Ayın Fotoğrafı" olarak güncellendi
   const kategoriler = [
     { slug: 'haberler', name: 'Haberler' },
     { slug: 'gozlemevleri', name: 'Gözlemevleri' },
     { slug: 'etkinlikler', name: 'Etkinlikler' },
     { slug: 'ayin-fotografi', name: 'Ayın Fotoğrafı' },
-    { slug: 'tarih', name: 'Gökbilim Tarihi' }, // Orijinal haline (tarih) geri döndürüldü
-    { slug: 'kutuphane', name: 'Gökbilim Kütüphanesi' } // Orijinal haline (kutuphane) geri döndürüldü
+    { slug: 'tarih', name: 'Gökbilim Tarihi' }, 
+    { slug: 'kutuphane', name: 'Gökbilim Kütüphanesi' } 
   ];
 
-  return kategoriler.map(({ slug, name }) => {
+  return kategoriler.flatMap(({ slug, name }) => {
     // Sadece bu kategoriye ait içerikleri filtreleyip tarihe göre sıralıyoruz
     const filtrelenmis = butunIcerikler
       .filter((icerik) => icerik.data.category === name)
       .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
-    return {
-      params: { category: slug }, // [category].astro dosya adıyla eşleşen parametre
-      props: { kategoriAdi: name, icerikler: filtrelenmis },
-    };
+    // Sayfa başına 9 içerik gösterecek şekilde sayfalandırmayı kuruyoruz
+    return paginate(filtrelenmis, {
+      params: { category: slug }, 
+      props: { kategoriAdi: name },
+      pageSize: 9
+    });
   });
 }
 
-const { kategoriAdi, icerikler } = Astro.props;
+// Artık içerikler 'icerikler' prop'undan değil, 'page.data' üzerinden geliyor
+const { page, kategoriAdi } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -41,10 +43,8 @@ const { kategoriAdi, icerikler } = Astro.props;
   </head>
   <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
     
-    <!-- Sabit Üst Menü Artık Tek Noktadan Geliyor -->
     <Navbar aktifKategori={kategoriAdi} />
 
-    <!-- Kategori Başlığı -->
     <header class="max-w-6xl mx-auto px-6 pt-16 pb-12 text-center border-b border-slate-800/50 mb-12">
       <h1 class="text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight">
         {kategoriAdi}
@@ -53,10 +53,9 @@ const { kategoriAdi, icerikler } = Astro.props;
 
     <main class="max-w-6xl mx-auto px-6 pb-24 min-h-[40vh]">
       
-      {icerikler.length > 0 ? (
+      {page.data.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {icerikler.map((icerik) => (
-            <!-- DEĞİŞİKLİK BURADA: .replace('.md', '') metodu eklendi -->
+          {page.data.map((icerik) => (
             <a href={`/icerikler/${icerik.id.replace('.md', '')}`} class="group block h-full">
               <article class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col h-full relative">
                 
@@ -105,9 +104,34 @@ const { kategoriAdi, icerikler } = Astro.props;
         </div>
       )}
 
+      <!-- Kategori Sayfaları İçin Sayfalama (Pagination) -->
+      { (page.url.prev || page.url.next) && (
+        <nav class="flex items-center justify-between border-t border-slate-800 mt-16 pt-8">
+          <div class="flex-1">
+            {page.url.prev && (
+              <a href={page.url.prev} class="inline-block px-5 py-3 bg-slate-900 border border-slate-700 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-amber-500 hover:border-slate-600 transition-all shadow-md">
+                &larr; Yeni İçerikler
+              </a>
+            )}
+          </div>
+          
+          <div class="flex-1 text-center text-slate-500 text-sm font-medium">
+            Sayfa {page.currentPage} / {page.lastPage}
+          </div>
+
+          <div class="flex-1 text-right">
+            {page.url.next && (
+              <a href={page.url.next} class="inline-block px-5 py-3 bg-slate-900 border border-slate-700 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-amber-500 hover:border-slate-600 transition-all shadow-md">
+                Önceki İçerikler &rarr;
+              </a>
+            )}
+          </div>
+        </nav>
+      )}
+
     </main>
     
-    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm mt-8">
       <p>&copy; {new Date().getFullYear()} gokbilim.net - Tüm hakları saklıdır.</p>
     </footer>
   </body>
