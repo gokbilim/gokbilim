@@ -16,7 +16,9 @@ Bulgular ayrıca Bennu'nun, Japonya'nın Hayabusa2 göreviyle incelenen Ryugu as
 **Analiz nasıl yapıldı?**
 NASA'nın 2023 yılında yeryüzüne ulaştırdığı yaklaşık 120 gramlık ana materyalin 120 gramlık kısmı, incelenmek üzere ETH Zürih'teki İzotop Jeokimyası Laboratuvarı'na gönderilmişti. Ekip, kütle spektrometreleri kullanarak beş farklı örnek parçasında hassas ölçümler gerçekleştirdi. Demir ve titanyum oranlarının tüm parçalarda neredeyse aynı kaldığı, krom oranlarında ise küçük değişimler olduğu tespit edildi. Kromdaki bu değişimin, ana gövdedeki sıvı su etkileşimlerinden kaynaklandığı düşünülüyor.
 
-![İnfografik](/images/bennu-su-buzu-infografik.jpg)
+<a href="/images/bennu-su-buzu-infografik.jpg" target="_blank" rel="noopener noreferrer">
+  <img src="/images/bennu-su-buzu-infografik.jpg" alt="İnfografik" title="Tam boyutta görmek için tıklayın" />
+</a>
 
 **Araştırmacılar ne söylüyor?**
 Çalışmayı yürüten ekipten İzotop Jeokimyası Profesörü Maria Schönbächler, asteroiti melez yapıda tanımlıyor. Schönbächler, materyalin doğrudan iç veya dış Güneş Sistemi ile eşleşmediğini; her iki bölgenin karakteristiklerini taşıdığını ve madde akışlarının karıştığı geçiş alanında vücut bulduğunu belirtiyor.
