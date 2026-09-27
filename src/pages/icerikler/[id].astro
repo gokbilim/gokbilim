@@ -4,6 +4,7 @@ import '../../styles/global.css';
 import Navbar from '../../components/Navbar.astro';
 
 export const prerender = true; 
+
 export async function getStaticPaths() {
   const butunIcerikler = await getCollection('icerikler');
   
@@ -18,7 +19,6 @@ export async function getStaticPaths() {
     const index = ayniKategori.findIndex((oge) => oge.id === icerik.id);
 
     return {
-      // DÜZELTME 1: id değerinden .md uzantısı temizlendi
       params: { id: icerik.id.replace('.md', '') },
       props: { 
         icerik,
@@ -32,6 +32,20 @@ export async function getStaticPaths() {
 
 const { icerik, onceki, sonraki } = Astro.props;
 const { Content } = await render(icerik);
+
+// Dinamik SEO Değişkenleri
+const seoTitle = `${icerik.data.title} | gokbilim.net`;
+const seoAciklama = icerik.data.importance || `${icerik.body.substring(0, 150).replace(/\n/g, ' ')}...`;
+
+// Kategori slug eşleştirmesi (tıklanabilir kategori etiketi için)
+const kategoriSluglari = {
+  'Haberler': 'haberler',
+  'Gözlemevleri': 'gozlemevleri',
+  'Etkinlikler': 'etkinlikler',
+  'Ayın Fotoğrafı': 'ayin-fotografi',
+  'Gökbilim Tarihi': 'tarih',
+  'Gökbilim Kütüphanesi': 'kutuphane'
+};
 ---
 
 <!DOCTYPE html>
@@ -40,7 +54,17 @@ const { Content } = await render(icerik);
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gokbilim.net - Türkiye'nin Gökbilim Portalı</title>
+    
+    <!-- Dinamik SEO Optimizasyonlu Title ve Description -->
+    <title>{seoTitle}</title>
+    <meta name="description" content={seoAciklama} />
+    
+    <!-- Open Graph (Sosyal Medya) Etiketleri -->
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={seoAciklama} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={Astro.url} />
+    {icerik.data.image && <meta property="og:image" content={new URL(icerik.data.image, Astro.site || Astro.url)} />}
 
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-VP4FF704GM"></script>
@@ -62,9 +86,12 @@ const { Content } = await render(icerik);
         <!-- Kategori Etiketi ve Tarih -->
         <div class="flex items-center gap-4 mb-6 text-sm">
           {icerik.data.category && (
-            <span class="bg-amber-500 text-slate-950 font-bold px-3 py-1 rounded-full shadow-md">
+            <a 
+              href={`/kategori/${kategoriSluglari[icerik.data.category] || '#'}`}
+              class="bg-amber-500 text-slate-950 font-bold px-3 py-1 rounded-full shadow-md hover:bg-amber-400 hover:scale-105 transition-all inline-block"
+            >
               {icerik.data.category}
-            </span>
+            </a>
           )}
           <time class="text-slate-500">{new Date(icerik.data.pubDate).toLocaleDateString('tr-TR')}</time>
         </div>
@@ -89,13 +116,13 @@ const { Content } = await render(icerik);
         {icerik.data.importance && (
           <div class="bg-amber-950/30 border-l-4 border-amber-500 p-5 mb-10 rounded-r-xl shadow-inner">
             <h2 class="text-lg font-bold text-amber-500 mb-2">
-        {['Gökbilim Tarihi', 'Gözlemevleri', 'Ayın Fotoğrafı', 'Gökbilim Kütüphanesi'].includes(icerik.data.category) ? 'Ön Bilgi' : 'Neden Önemli?'}
+              {['Gökbilim Tarihi', 'Gözlemevleri', 'Ayın Fotoğrafı', 'Gökbilim Kütüphanesi'].includes(icerik.data.category) ? 'Ön Bilgi' : 'Neden Önemli?'}
             </h2>
             <p class="text-amber-100/90 leading-relaxed">{icerik.data.importance}</p>
           </div>
         )}
 
-        <!-- YENİ: Künye Bilgileri Bölümü (Gözlemevleri İçin) -->
+        <!-- Künye Bilgileri Bölümü (Gözlemevleri İçin) -->
         {icerik.data.kunye && (
           <div class="bg-blue-950/30 border-l-4 border-blue-500 p-6 mb-10 rounded-r-xl shadow-inner">
             <h2 class="text-lg font-bold text-blue-400 mb-4 flex items-center gap-2">
@@ -116,19 +143,17 @@ const { Content } = await render(icerik);
         
         <!-- Metin İçeriği -->
         <div class="prose prose-invert prose-amber max-w-none prose-headings:font-bold prose-h2:text-xl md:prose-h2:text-2xl prose-h3:text-lg md:prose-h3:text-xl mt-6">
-
           <Content />
         </div>
       </article>
 
-      <!-- Alt Gezinme Alanı (Önceki / Anasayfa / Sonraki) -->
+      <!-- Alt Gezinme Alanı (Yeni İçerik / Anasayfa / Eski İçerik) -->
       <nav class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="flex-1 w-full md:w-auto">
-          {onceki && (
-            <!-- DÜZELTME 2: Önceki butonunda .md uzantısı temizlendi -->
-            <a href={`/icerikler/${onceki.id.replace('.md', '')}`} class="group flex flex-col items-start p-4 bg-slate-900/50 rounded-xl border border-transparent hover:border-slate-700 transition-all">
-              <span class="text-xs text-slate-500 uppercase tracking-wider mb-2 group-hover:text-amber-500 transition-colors">&larr; Önceki</span>
-              <span class="text-slate-300 font-medium group-hover:text-slate-100 transition-colors line-clamp-2">{onceki.data.title}</span>
+          {sonraki && (
+            <a href={`/icerikler/${sonraki.id.replace('.md', '')}`} class="group flex flex-col items-start p-4 bg-slate-900/50 rounded-xl border border-transparent hover:border-slate-700 transition-all">
+              <span class="text-xs text-slate-500 uppercase tracking-wider mb-2 group-hover:text-amber-500 transition-colors">&larr; Yeni İçerik</span>
+              <span class="text-slate-300 font-medium group-hover:text-slate-100 transition-colors line-clamp-2">{sonraki.data.title}</span>
             </a>
           )}
         </div>
@@ -143,11 +168,10 @@ const { Content } = await render(icerik);
         </div>
 
         <div class="flex-1 w-full md:w-auto text-right">
-          {sonraki && (
-            <!-- DÜZELTME 3: Sonraki butonunda .md uzantısı temizlendi -->
-            <a href={`/icerikler/${sonraki.id.replace('.md', '')}`} class="group flex flex-col items-end p-4 bg-slate-900/50 rounded-xl border border-transparent hover:border-slate-700 transition-all">
-              <span class="text-xs text-slate-500 uppercase tracking-wider mb-2 group-hover:text-amber-500 transition-colors">Sonraki &rarr;</span>
-              <span class="text-slate-300 font-medium group-hover:text-slate-100 transition-colors line-clamp-2">{sonraki.data.title}</span>
+          {onceki && (
+            <a href={`/icerikler/${onceki.id.replace('.md', '')}`} class="group flex flex-col items-end p-4 bg-slate-900/50 rounded-xl border border-transparent hover:border-slate-700 transition-all">
+              <span class="text-xs text-slate-500 uppercase tracking-wider mb-2 group-hover:text-amber-500 transition-colors">Eski İçerik &rarr;</span>
+              <span class="text-slate-300 font-medium group-hover:text-slate-100 transition-colors line-clamp-2">{onceki.data.title}</span>
             </a>
           )}
         </div>

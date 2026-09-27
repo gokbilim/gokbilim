@@ -1,23 +1,42 @@
 ---
 import '../../../styles/global.css';
-import Navbar from '../../../components/Navbar.astro';
 import { getCollection } from 'astro:content';
+import Navbar from '../../../components/Navbar.astro';
 
 export const prerender = true;
 
-// Sayfalama için getStaticPaths zorunludur
 export async function getStaticPaths({ paginate }) {
   const butunIcerikler = await getCollection('icerikler');
-  
-  // İçerikleri en yeniden eskiye sıralıyoruz
-  const sirali = butunIcerikler.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
-  
-  // Sayfa başına 9 içerik gösterecek şekilde ayarlıyoruz
-  return paginate(sirali, { pageSize: 9 });
+
+  // Kategori tanımlarına SEO için özel açıklamalar eklendi
+  const kategoriler = [
+    { slug: 'haberler', name: 'Haberler', description: 'Uzay araştırmaları, astronomi keşifleri ve gökbilim dünyasındaki en güncel haberler.' },
+    { slug: 'gozlemevleri', name: 'Gözlemevleri', description: 'Türkiye ve dünyadaki önemli gözlemevleri, teleskoplar ve astronomik tesislerin teknik incelemeleri.' },
+    { slug: 'etkinlikler', name: 'Etkinlikler', description: 'Göktaşı yağmurları, tutulmalar, astronomi festivalleri ve gökyüzü gözlem etkinlikleri takvimi.' },
+    { slug: 'ayin-fotografi', name: 'Ayın Fotoğrafı', description: 'Derin uzay, gezegenler ve gökyüzü olaylarını konu alan astrofotografçıların çektiği ayın en iyi fotoğrafları.' },
+    { slug: 'tarih', name: 'Gökbilim Tarihi', description: 'Antik çağlardan modern zamanlara astronomi tarihi, önemli gökbilimciler ve uzay biliminin evrimi.' },
+    { slug: 'kutuphane', name: 'Gökbilim Kütüphanesi', description: 'Astronomi terimleri, uzay bilimi kavramları, makaleler ve gökbilim öğrenmek isteyenler için temel kaynaklar.' } 
+  ];
+
+  return kategoriler.flatMap(({ slug, name, description }) => {
+    const filtrelenmis = butunIcerikler
+      .filter((icerik) => icerik.data.category === name)
+      .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+    return paginate(filtrelenmis, {
+      params: { category: slug }, 
+      props: { kategoriAdi: name, kategoriAciklamasi: description }, // description props'a dahil edildi
+      pageSize: 9
+    });
+  });
 }
 
-// Astro.props üzerinden paginate fonksiyonunun ürettiği 'page' objesini alıyoruz
-const { page } = Astro.props;
+// Props üzerinden page, kategoriAdi ve YENİ EKLENEN kategoriAciklamasi alınıyor
+const { page, kategoriAdi, kategoriAciklamasi } = Astro.props;
+
+// SEO için dinamik sayfa başlığı kurgusu
+const sayfaUzantisi = page.currentPage > 1 ? ` - Sayfa ${page.currentPage}` : '';
+const seoTitle = `${kategoriAdi} Kategorisi${sayfaUzantisi} | gokbilim.net`;
 
 const etiketler = {
   'haberler': 'Neden Önemli:',
@@ -42,63 +61,36 @@ const kategoriSluglari = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gokbilim.net - Türkiye'nin Gökbilim Portalı</title>
+    
+    <!-- SEO Optimizasyonlu Title ve Description -->
+    <title>{seoTitle}</title>
+    <!-- Props'tan gelen dinamik açıklama buraya basılıyor -->
+    <meta name="description" content={kategoriAciklamasi} />
+    
+    <!-- Open Graph (Sosyal Medya) Etiketleri -->
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={kategoriAciklamasi} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
 
-    <!-- Yandex Doğrulama Meta Etiketi -->
-    <meta name="yandex-verification" content="b86ea5de59d409ed" />
-
-    <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-VP4FF704GM"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-VP4FF704GM');
-    </script>
   </head>
   <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
     
-<!-- Sabit Üst Menü (Sticky Navbar) -->
-    <Navbar />
+    <Navbar aktifKategori={kategoriAdi} />
 
-<!-- Kahraman (Hero) Alanı - Sağ Alt Hizalı ve Aydınlık Tasarım -->
-    <header class="max-w-6xl mx-auto mt-8 px-6 mb-12">
-      <!-- İçerik sağ alta (items-end ve text-right) hizalandı, sağdan boşluk (pr-6/md:pr-10) bırakıldı -->
-      <div class="relative w-full h-56 md:h-[320px] rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-end items-end text-right border border-slate-800 pb-6 pr-6 md:pb-8 md:pr-10">
-        
-        <!-- Arka Plan Görseli -->
-        <div class="absolute inset-0 bg-slate-900">
-          <!-- Görselin opaklığı %100 yapıldı, artık tüm aydınlığıyla görünecek -->
-          <img src="/images/hero-bg.jpg" alt="Uzay Arka Planı" class="w-full h-full object-cover opacity-100" />
-          
-          <!-- Karartma efekti iyice hafifletildi, sadece okunabilirlik için alt kısımda ince katman bırakıldı -->
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
-        </div>
-
-        <!-- Yazılar (Sağ alt köşe) -->
-        <div class="relative z-10 flex flex-col items-end w-full">
-          <h1 class="text-3xl md:text-5xl font-extrabold text-slate-100 tracking-tight mb-1 md:mb-2 drop-shadow-lg">
-            <span class="text-amber-500">gokbilim</span>.net
-          </h1>
-          <p class="text-base md:text-xl text-slate-200 font-medium drop-shadow-md">
-            Türkiye'nin Gökbilim Portalı
-          </p>
-        </div>
-        
-      </div>
+    <header class="max-w-6xl mx-auto px-6 pt-16 pb-12 text-center border-b border-slate-800/50 mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight">
+        {kategoriAdi}
+      </h1>
     </header>
 
-    <!-- Ana İçerik -->
-    <main class="max-w-6xl mx-auto px-6 pb-24">
+    <main class="max-w-6xl mx-auto px-6 pb-24 min-h-[40vh]">
       
-      <!-- Ortak İçerik Akışı Bölümü -->
-      <section id="icerik-akisi">
+      {page.data.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {page.data.map((icerik) => (
-            <!-- Sarmalayan a etiketi kaldırıldı, article etiketi relative yapılarak sınır belirlendi -->
             <article class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col h-full">
               
-              <!-- Tıklanabilir Kategori Etiketi (z-20 ile en üstte) -->
               {icerik.data.category && (
                 <a 
                   href={`/kategori/${kategoriSluglari[icerik.data.category] || '#'}`}
@@ -119,7 +111,6 @@ const kategoriSluglari = {
               )}
               
               <div class="p-6 flex flex-col flex-grow">
-                <!-- Başlık ve İçerik Linki (before:absolute ile tüm kartı görünmez olarak kaplıyor, z-10) -->
                 <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-amber-500 transition-colors relative">
                   <a 
                     href={`/icerikler/${icerik.id.replace('.md', '')}`}
@@ -148,38 +139,43 @@ const kategoriSluglari = {
             </article>
           ))}
         </div>
+      ) : (
+        <div class="flex flex-col items-center justify-center text-center py-20">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-slate-700 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+          </svg>
+          <h2 class="text-2xl font-bold text-slate-400 mb-2">Henüz İçerik Yok</h2>
+          <p class="text-slate-500 max-w-md">Bu kategoriye ait yazılar çok yakında eklenecektir. Lütfen daha sonra tekrar kontrol edin.</p>
+        </div>
+      )}
 
-        <!-- Sayfalama (Pagination) Tuşları -->
-        { (page.url.prev || page.url.next) && (
-          <nav class="flex items-center justify-between border-t border-slate-800 mt-16 pt-8">
-            
-            <div class="flex-1">
-              {page.url.next && (
-                <a href={page.url.next} class="inline-block px-5 py-3 bg-slate-900 border border-slate-700 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-amber-500 hover:border-slate-600 transition-all shadow-md">
-                  &larr; Önceki İçerikler
-                </a>
-              )}
-            </div>
-            
-            <div class="flex-1 text-center text-slate-500 text-sm font-medium">
-              Sayfa {page.currentPage} / {page.lastPage}
-            </div>
+      { (page.url.prev || page.url.next) && (
+        <nav class="flex items-center justify-between border-t border-slate-800 mt-16 pt-8">
+          <div class="flex-1">
+            {page.url.next && (
+              <a href={page.url.next} class="inline-block px-5 py-3 bg-slate-900 border border-slate-700 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-amber-500 hover:border-slate-600 transition-all shadow-md">
+                &larr; Önceki İçerikler
+              </a>
+            )}
+          </div>
+          
+          <div class="flex-1 text-center text-slate-500 text-sm font-medium">
+            Sayfa {page.currentPage} / {page.lastPage}
+          </div>
 
-            <div class="flex-1 text-right">
-              {page.url.prev && (
-                <a href={page.url.prev} class="inline-block px-5 py-3 bg-slate-900 border border-slate-700 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-amber-500 hover:border-slate-600 transition-all shadow-md">
-                  Yeni İçerikler &rarr;
-                </a>
-              )}
-            </div>
-
-          </nav>
-        )}
-      </section>
+          <div class="flex-1 text-right">
+            {page.url.prev && (
+              <a href={page.url.prev} class="inline-block px-5 py-3 bg-slate-900 border border-slate-700 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-amber-500 hover:border-slate-600 transition-all shadow-md">
+                Yeni İçerikler &rarr;
+              </a>
+            )}
+          </div>
+        </nav>
+      )}
 
     </main>
     
-    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm mt-8">
       <p>&copy; {new Date().getFullYear()} gokbilim.net - Tüm hakları saklıdır.</p>
     </footer>
   </body>
