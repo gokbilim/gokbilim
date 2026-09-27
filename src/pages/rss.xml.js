@@ -20,6 +20,11 @@ export async function GET(context) {
     
     // Projenizin site URL'si (astro.config.mjs dosyanızdaki 'site' ayarından gelir)
     site: context.site,
+
+    // YENİ: rss etiketi içine W3C'nin istediği atom isimlendirmesini ekliyoruz
+    xmlns: {
+      atom: "http://www.w3.org/2005/Atom",
+    },
     
     // 4. Makaleleri RSS öğelerine dönüştür
     items: siraliIcerikler.map((icerik) => ({
@@ -36,7 +41,10 @@ export async function GET(context) {
       link: `/icerikler/${icerik.id.replace('.md', '')}/`,
     })),
     
-    // RSS dilini Türkçe olarak ayarla
-    customData: `<language>tr-tr</language>`,
+    // RSS dilini Türkçe olarak ayarla ve YENİ: atom:link (self referans) etiketini ekle
+    customData: `
+      <language>tr-tr</language>
+      <atom:link href="${context.site}rss.xml" rel="self" type="application/rss+xml" />
+    `,
   });
 }
