@@ -1,7 +1,7 @@
 ---
 title: "OSIRIS-REx Örnekleri, Bennu'nun Su Buzu Çizgisinde Oluştuğuna İşaret Ediyor"
 category: Haberler
-pubDate: "2026-09-27T21:35:00.000+03:00"
+pubDate: 2026-09-27T21:35:00.000+03:00
 importance: "Bennu gibi karbon zengini asteroitlerin Güneş Sistemi'nin çok dış bölgelerinde şekillendiği düşünülüyordu. İzotop verileri, bu cisimlerin iç ve dış kısımlardan gelen materyallerin karıştığı "su buzu çizgisi" yakınlarında meydana geldiğine işaret ediyor. Bu durum, gezegenlerin oluşum sürecindeki ham madde dağılımı ile Jüpiter'in erken dönemdeki rolü hakkındaki mevcut modelleri güncelliyor."
 image: /images/bennu-su-buzu-cizgisi.jpg
 ---
