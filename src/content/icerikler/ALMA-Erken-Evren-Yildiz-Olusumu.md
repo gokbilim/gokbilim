@@ -14,7 +14,9 @@ Erken evrendeki galaksilerin yıldız oluşum hızları ile mekanizmaları, astr
 
 Elde edilen yüksek sinyal-gürültü oranlı (4 sigmadan büyük) veriler, galaksilerdeki gazın yoğunluk değerlerini ortaya koydu. Yapılan ölçümlere göre nötr gaz yoğunlukları, santimetreküpte 3 bin ile 1 milyon parçacık (10^3.5 - 10^6 cm^-3) arasında değişiyor. Mevcut yoğunluk değerleri, günümüze nispeten daha yakın dönemlerdeki yıldız patlaması (starburst) galaksilerindeki yoğunluklarla uyumlu seyrediyor. 
 
-Ancak gözlemler sonucunda uzak ultraviyole (FUV) radyasyon gücünün, hem yerel evrendeki hem de yüksek kırmızıya kaymalı diğer yıldız patlaması galaksilerine kıyasla düşük olduğu belirlendi. Ek olarak araştırma ekibi, daha önceki James Webb Uzay Teleskobu (JWST) verilerinden elde edilen oksijen bolluğu ölçümlerini de kullanarak galaksilerin gaz kütle oranlarını hesapladı. Galaksi kütlelerinin yüzde 30 ila yüzde 80'inin gazdan oluştuğu (fgas ~ 0.3-0.8) hesaplanıyor. 
+Ancak gözlemler sonucunda uzak ultraviyole (FUV) radyasyon gücünün, hem yerel evrendeki hem de yüksek kırmızıya kaymalı diğer yıldız patlaması galaksilerine kıyasla düşük olduğu belirlendi. Ek olarak araştırma ekibi, daha önceki James Webb Uzay Teleskobu (JWST) verilerinden elde edilen oksijen bolluğu ölçümlerini de kullanarak galaksilerin gaz kütle oranlarını hesapladı. Galaksi kütlelerinin yüzde 30 ila yüzde 80'inin gazdan oluştuğu (fgas ~ 0.3-0.8) hesaplanıyor.
+
+![İyonize gazlar](/images/alma-oi-145-erken-galaksi-2.jpg)
 
 Çalışmada [O I] 145 mikrometre çizgisinin yanı sıra [N II] 205 mikrometre (iyonize azot) çizgisi de arandı. İncelenen galaksilerin çoğunda [N II] emisyonu saptanamadı. Ortaya çıkan tablo, gözlemlenen karbon emisyonunun ([C II]) yüzde 74 ile yüzde 96 arasındaki büyük kısmının iyonize bölgelerden değil, nötr gaz bölgelerinden kaynaklandığını gösteriyor.
 
