@@ -150,7 +150,7 @@ const kategoriSluglari = {
 <!-- Alt Gezinme Alanı (Eski İçerik / Anasayfa / Yeni İçerik) -->
       <nav class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
         
-        {/* SOL TARAF: Eski İçerik (onceki) */}
+        {/* SOL TARAF: Önceki İçerik (onceki) */}
         <div class="flex-1 w-full md:w-auto text-left">
           {onceki && (
             <a href={`/icerikler/${onceki.id.replace('.md', '')}`} class="group flex flex-col items-start p-4 bg-slate-900/50 rounded-xl border border-transparent hover:border-slate-700 transition-all">
@@ -173,7 +173,7 @@ const kategoriSluglari = {
         <div class="flex-1 w-full md:w-auto text-right">
           {sonraki && (
             <a href={`/icerikler/${sonraki.id.replace('.md', '')}`} class="group flex flex-col items-end p-4 bg-slate-900/50 rounded-xl border border-transparent hover:border-slate-700 transition-all">
-              <span class="text-xs text-slate-500 uppercase tracking-wider mb-2 group-hover:text-amber-500 transition-colors">Yeni İçerik &rarr;</span>
+              <span class="text-xs text-slate-500 uppercase tracking-wider mb-2 group-hover:text-amber-500 transition-colors">Sonraki İçerik &rarr;</span>
               <span class="text-slate-300 font-medium group-hover:text-slate-100 transition-colors line-clamp-2">{sonraki.data.title}</span>
             </a>
           )}
