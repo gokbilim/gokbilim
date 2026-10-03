@@ -45,11 +45,10 @@ const { aktifKategori = '' } = Astro.props;
 </script>
 
 <style is:global>
-  /* gokbilim.net karanlık tema uyumluluğu */
   :root {
-    --pagefind-ui-scale: 0.85;
+    --pagefind-ui-scale: 0.8; /* Genel boyutu hafif küçülttük */
     --pagefind-ui-primary: #f59e0b; /* amber-500 */
-    --pagefind-ui-text: #cbd5e1; /* slate-300 */
+    --pagefind-ui-text: #f8fafc; /* Ana metinleri en parlak beyaza çektik (slate-50) */
     --pagefind-ui-background: #0f172a; /* slate-900 */
     --pagefind-ui-border: #1e293b; /* slate-800 */
     --pagefind-ui-tag: #1e293b;
@@ -60,10 +59,36 @@ const { aktifKategori = '' } = Astro.props;
     --pagefind-ui-font: inherit;
   }
   
+  /* Arama Kutusunun Yüksekliğini İnceltme */
   .pagefind-ui__search-input {
     outline: none !important;
+    height: 40px !important; /* Kutunun yüksekliğini doğrudan kısıtladık */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
+  
+  /* Temizle butonunun hizalamasını düzeltme */
+  .pagefind-ui__search-clear {
+    height: 40px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Arama Sonuçlarının Okunabilirliğini Artırma */
   .pagefind-ui__result-excerpt {
+    color: #e2e8f0 !important; /* Silik gri yerine çok daha parlak bir gri (slate-200) */
+    font-weight: 400 !important;
+  }
+  
+  /* Sonuç başlıklarını daha da belirginleştirme */
+  .pagefind-ui__result-title .pagefind-ui__result-link {
+    color: #f1f5f9 !important; /* Başlıklar için beyaz/açık gri (slate-100) */
+    font-weight: 600 !important;
+  }
+  
+  /* Kutunun içindeki "Sitede ara..." yazısının rengi */
+  .pagefind-ui__search-input::placeholder {
     color: #94a3b8 !important; /* slate-400 */
+    opacity: 1;
   }
 </style>
