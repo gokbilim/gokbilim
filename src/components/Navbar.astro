@@ -14,5 +14,56 @@ const { aktifKategori = '' } = Astro.props;
       <li><a href="/kategori/tarih" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Gökbilim Tarihi' ? 'text-amber-500' : ''}`}>Gökbilim Tarihi</a></li>
       <li><a href="/kategori/kutuphane" class={`hover:text-amber-500 transition-colors ${aktifKategori === 'Gökbilim Kütüphanesi' ? 'text-amber-500' : ''}`}>Gökbilim Kütüphanesi</a></li>
     </ul>
+    
+    <!-- Arama Kutusu Alanı -->
+    <div id="arama-kutusu" class="w-full lg:w-auto max-w-xs ml-auto"></div>
   </div>
 </nav>
+
+<!-- Pagefind Script ve Stilleri -->
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#arama-kutusu",
+      showSubResults: true,
+      showImages: false,
+      translations: {
+        placeholder: "Sitede ara...",
+        clear_search: "Temizle",
+        load_more: "Daha fazla yükle",
+        search_label: "Arama",
+        filters_label: "Filtreler",
+        zero_results: "[SEARCH_TERM] kelimesi bulunamadı",
+        many_results: "[SEARCH_TERM] için [COUNT] sonuç",
+        one_result: "[SEARCH_TERM] için 1 sonuç"
+      }
+    });
+  });
+</script>
+
+<style is:global>
+  /* gokbilim.net karanlık tema uyumluluğu */
+  :root {
+    --pagefind-ui-scale: 0.85;
+    --pagefind-ui-primary: #f59e0b; /* amber-500 */
+    --pagefind-ui-text: #cbd5e1; /* slate-300 */
+    --pagefind-ui-background: #0f172a; /* slate-900 */
+    --pagefind-ui-border: #1e293b; /* slate-800 */
+    --pagefind-ui-tag: #1e293b;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 0.75rem;
+    --pagefind-ui-image-border-radius: 0.5rem;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: inherit;
+  }
+  
+  .pagefind-ui__search-input {
+    outline: none !important;
+  }
+  .pagefind-ui__result-excerpt {
+    color: #94a3b8 !important; /* slate-400 */
+  }
+</style>
