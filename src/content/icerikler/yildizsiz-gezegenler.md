@@ -66,10 +66,12 @@ NASA tarafından 30 Ağustos 2026 tarihinde başarıyla fırlatılan Nancy Grace
 Gezegenin hikayesi, etrafında döndüğü yıldızla başlayıp bitmek zorunda değildir. Kozmik deniz, henüz teleskoplarımızın göremediği trilyonlarca gizli gezegeni barındırıyor. Yeni nesil uzay araçları sayesinde bu karanlık rotaları aydınlatarak, evrendeki yalnız dünyaların sayısını ve gezegen sistemlerinin karmaşık evrimini tüm gerçekliğiyle görebileceğiz.
 
 ### Kaynakça
-* NASA — New Study Reveals NASA's Roman Could Find 400 Earth-Mass Rogue Planets
-* NASA — NASA's Roman Space Telescope Launches (30 Ağustos 2026 Fırlatması)
-* NASA — NASA Activates Roman's Primary Instrument, Checks Out Coronagraph
-* ESO — Six billion tonnes a second: Rogue planet found growing at record rate
-* Miret-Roig, N. — The origin of free-floating planets, Astrophysics and Space Science
-* Miret-Roig et al. — A rich population of free-floating planets in the Upper Scorpius young stellar association, Nature Astronomy
-* Sumi et al. — Free-floating planets, The Astronomical Journal
+
+* [NASA — New Study Reveals NASA’s Roman Could Find 400 Earth-Mass Rogue Planets](https://www.nasa.gov/missions/roman-space-telescope/new-study-reveals-nasas-roman-could-find-400-earth-mass-rogue-planets/)
+* [NASA Science — Microlensing](https://science.nasa.gov/mission/roman-space-telescope/microlensing/)
+* [NASA — Unveiling Rogue Planets With NASA’s Roman Space Telescope](https://www.nasa.gov/universe/unveiling-rogue-planets-with-nasas-roman-space-telescope/)
+* [NASA Science — Galactic Bulge Time-Domain Survey](https://science.nasa.gov/mission/roman-space-telescope/galactic-bulge-time-domain-survey/)
+* [Miret-Roig et al. — A rich population of free-floating planets in the Upper Scorpius young stellar association, Nature Astronomy](https://www.nature.com/articles/s41550-021-01513-x)
+* [Miret-Roig — The origin of free-floating planets, Astrophysics and Space Science](https://link.springer.com/article/10.1007/s10509-023-04175-5)
+* [Sumi et al. — Free-Floating Planets, The Astronomical Journal](https://iopscience.iop.org/)
+
