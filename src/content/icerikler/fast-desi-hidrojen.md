@@ -29,5 +29,5 @@ Bulgular, yıldız oluşumundaki kozmik yavaşlamanın sadece mevcut yakıtın t
 Kaynaklar
 
 * [Araştırma Makalesi — Nature Astronomy](https://www.nature.com/articles/s41550-026-02965-9)
-* [Araştırma Ön Baskısı — arXiv](hhttps://arxiv.org/abs/2607.05326)
+* [Araştırma Ön Baskısı — arXiv](https://arxiv.org/abs/2607.05326)
 * [Çin Bilimler Akademisi — Araştırma Hakkında Açıklama](https://english.cas.cn/newsroom/cas-in-media/202609/t20260902_1189682.shtml)
