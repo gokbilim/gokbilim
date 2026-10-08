@@ -2,7 +2,7 @@
 title: 2026 Dünya Uzay Haftası "Roket Devrimi" Temasıyla Kutlanıyor 
 category: "Haberler"
 pubDate: 2026-10-08T22:45:20.000+03:00 
-importance: "Her yıl 4-10 Ekim tarihleri arasında kutlanan Dünya Uzay Haftası'nın bu yılki teması "Roket Devrimi" olarak belirlendi. Etkinlikler, yeniden kullanılabilir roketlerin ve ticari taşıma sistemlerinin uzaya erişimi nasıl dönüştürdüğünü küresel ölçekte gündeme taşıyor."
+importance: "Her yıl 4-10 Ekim tarihleri arasında kutlanan Dünya Uzay Haftası'nın bu yılki teması 'Roket Devrimi' olarak belirlendi. Etkinlikler, yeniden kullanılabilir roketlerin ve ticari taşıma sistemlerinin uzaya erişimi nasıl dönüştürdüğünü küresel ölçekte gündeme taşıyor."
 image: /images/dunya-uzay-haftasi-roket-2026.jpg
 ---
 
