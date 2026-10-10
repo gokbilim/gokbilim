@@ -1,6 +1,6 @@
 ---
 title: "Nötron Yıldızları: Evrenin En Yoğun Laboratuvarları"
-category: Makale
+category: Gökbilim Kütüphanesi
 pubDate: 2026-10-10T21:26:00.000+03:00
 importance: "Nötron yıldızları, büyük kütleli yıldızların çekirdek çökmesi sonucunda oluşabilen, olağanüstü yoğun cisimlerdir. Maddenin uç koşullardaki davranışını incelemek ve kütleçekim kuramlarını sınamak için eşsiz laboratuvarlar sunarlar."
 image: /images/notron-yildizi-0.jpg
