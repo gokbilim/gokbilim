@@ -49,4 +49,4 @@ Nötron yıldızlarını incelemek, maddenin aşırı yoğunluklarda nasıl davr
 * [ESA — Süpernovalar ve Nötron Yıldızlarının Oluşumu](https://www.esa.int/Science_Exploration/Space_Science/Extreme_space/Neutron_stars)
 * [LIGO Caltech — Kütleçekim Dalgaları](https://www.ligo.caltech.edu/page/gravitational-waves)
 * [NASA — Altın Nereden Geliyor? Nötron Yıldızı Birleşmelerine İlişkin İpuçları](https://science.nasa.gov/universe/stars/neutron-stars/magnetars/where-does-gold-come-from-nasa-data-has-clues/)
-* [Abbott ve diğerleri — GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral, Physical Review Letters](https://doi.org/10.1103/PhysRevLett.119.161101)
+* [APS Journals — GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral, Physical Review Letters](https://doi.org/10.1103/PhysRevLett.119.161101)
