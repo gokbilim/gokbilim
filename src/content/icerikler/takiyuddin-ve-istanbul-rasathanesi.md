@@ -1,0 +1,38 @@
+---
+title: "Kubbeleri Yıkılan Gökyüzü: Takiyüddin'in İstanbul Rasathanesi ve Bilgiyle Hesaplaşma"
+category: Gökbilim Tarihi
+pubDate: "2026-10-25T19:30:00.000+03:00"
+importance: "16. yüzyılın son çeyreğinde Takiyüddin er-Râsıd tarafından İstanbul'da kurulan dârürrasad, Meraga ve Semerkant geleneklerinin ulaştığı teknik birikimi mekanik saatlerle ve özgün ölçüm aletleriyle bir araya getirdi. Kısa ömürlü olan bu kurumun yıkılışı, Osmanlı siyasi dengeleri, astrolojik beklentiler ve doğa olaylarının metafizik yorumları arasındaki karmaşık çatışmanın sonucudur."
+image: /images/takiyuddin-istanbul-observatory.jpg
+---
+
+16. yüzyılın ikinci yarısında Osmanlı Devleti, sınırlarını üç kıtaya yaymış devasa bir imparatorluk yapısına ulaşmışken başkent İstanbul, İslam dünyasının yüzyıllar boyunca biriktirdiği matematiksel astronomi mirasının son büyük kurumsal halkasına ev sahipliği yapmaya hazırlanıyordu. 1570'lerin başında Mısır ve Şam'daki eğitim ve kadılık görevlerinin ardından payitahta gelen Takiyüddin Muhammed ibn Ma'rûf er-Râsıd, II. Selim döneminde müneccimbaşılık makamına getirildi. Padişah III. Murad'ın tahta çıkışının ardından dönemin Sadrazamı Sokollu Mehmed Paşa ve Hoca Sâdeddin Efendi'nin desteğini alan Takiyüddin, Uluğ Bey'in 15. yüzyılda Semerkant'ta hazırladığı Zîc-i İlhânî ve Zîc-i Sultânî tablolarındaki gözlemsel hataları gidermek amacıyla bağımsız bir rasathane kurulması gerektiğini saraya sundu. 1575 ile 1577 yılları arasında Tophane sırtlarında inşa edilen Dârürrasad-ı Cedîd-i Âmire, yalnızca bir gözlem mekânı değil, İslam dünyasındaki zîc hazırlama geleneğinin dönemin en hassas mekanik teknolojisiyle buluştuğu merkez oldu.
+
+Takiyüddin'in kurduğu rasathanenin önemi, kullanılan aletlerin çeşitliliğinde ve gözlem yöntemlerinde kendini gösteriyordu. Rasathanede Meraga ve Semerkant geleneğinde kullanılan kadran (rubu), usturlap ve zâtü'l-halak (armillary küre) gibi temel aletlerin yanı sıra, Takiyüddin'in kendi geliştirdiği düzenekler bulunuyordu. Bunların başında yay kirişlerini ölçmeye yarayan zâtü's-semt ve'l-irtifâ (azimut ve irtifa aleti) ile iki yıldız arasındaki açısal mesafeyi doğrudan ölçen müşebbehe bi'l-menâtık geliyordu.
+
+![Takiyüddin ve Çalışma Arkadaşlarının Rasathane İçi Gözlemleri](/images/takiyuddin-rasathane-aletleri.jpg)
+
+Ölçüm tekniği açısından en kritik gelişme ise gözlem saatlerinin kullanımıydı. Tycho Brahe'nin Danimarka'daki Uraniborg gözlemevinde yürüttüğü çalışmalara kronolojik olarak paralellik gösteren bu dönemde Takiyüddin, gökcisimlerinin meridyen geçişlerini saniye hassasiyetinde kaydedebilmek için zemberekli mekanik astronomi saatleri inşa etti. *el-Kevâkibü'd-Dürriyye fî Vaz'i'l-Benkâmâtid-Devriyye* adlı eserinde ayrıntılarını verdiği bu mekanik saatler, zamanı dakika ve saniye ölçeğinde bölerek açısal koordinat hesaplarına doğrudan dâhil etti. Takiyüddin ayrıca trigonometrik tablolarda kirişler yerine sinüs, kosinüs, tanjant ve kotanjant fonksiyonlarını sistematik olarak kullandı ve ondalık kesirleri astronomik tablolara uyguladı.
+
+Kurumun gözlem faaliyetleri sürerken 1577 yılının Kasım ayında gökyüzünde parlak bir kuyruklu yıldız belirdi. Takiyüddin, günlerce İstanbul semalarından izlenen bu gökcismini gözlemleyerek padişaha sunduğu raporda, Osmanlı ordusunun Safevî seferinde zafer kazanacağına dair astrolojik yorumlarda bulundu. Ancak dönemin toplumsal ve siyasi dengeleri, saray içi iktidar mücadeleleriyle birleşerek rasathanenin aleyhine işleyen bir zemin hazırladı. 1578 yılında İstanbul'da baş gösteren veba salgını, askeri seferlerin getirdiği mali yükler ve saraydaki klikler arasındaki güç çekişmeleri, rasathaneyi doğrudan hedef tahtasına oturttu.
+
+![1577 Büyük Kuyruklu Yıldızı ve İstanbul Semaları](/images/1577-kuyruklu-yildiz-gozlemi.jpg)
+
+Dönemin Şeyhülislamı Kadızâde Ahmed Şemseddin Efendi'nin III. Murad'a sunduğu fetva veya telhis mahiyetindeki metin, rasathanenin kurumsal sonunu getiren gerekçeyi açıkça ortaya koyuyordu. Bu metinde, göklerin sırlarını çözmeye kalkışmanın ve zîc hazırlamak amacıyla rasat yapmanın uğursuzluk getireceği, İslam tarihinde rasathane kurulan hiçbir devletin ayakta kalamadığı ileri sürülüyordu. 1580 yılının Ocak ayında, Kaptan-ı Derya Kılıç Ali Paşa'ya verilen emirle Tophane sırtlarındaki gözlemevi, denizden açılan top ateşiyle ya da görevlendirilen leventler eliyle kısa sürede yerle bir edildi.
+
+Rasathanenin yok edilişi, tarih yazımında sıklıkla indirgemeci bir yaklaşımla yalnızca "din ve bilim çatışması" ekseninde ele alınmıştır. Oysa dönemin belgeleri ve siyasi koşulları incelendiğinde meselenin ardında çok katmanlı felsefi, teolojik ve kurumsal çatlakların yer aldığı görülür. O çağda astronomi (ilm-i hey'et) ile astroloji (ilm-i ahkâm-ı nücûm) iç içe geçmiş disiplinlerdi. Rasathaneler hükümdarların gözünde geleceği öngörme ve devletin bekasını koruma gayesiyle meşrulaştırılıyordu. Takiyüddin'in 1577 kuyruklu yıldızına dair yaptığı iyimser siyasi kehanetlerin sahada hızlı ve kesin zaferlerle karşılanamaması, rasathanenin en büyük siyasi koruma kalkanını zayıflattı. Sokollu Mehmed Paşa'nın 1579'da öldürülmesiyle hami desteğini yitiren kurum, saray içindeki rakip hiziplerin manevra alanına dönüştü.
+
+![Tophane Sırtlarındaki Rasathanenin Yıkılışı ve Dönem Temsili](/images/istanbul-rasathanesi-yikilisi.jpg)
+
+Meselenin felsefi ve teolojik boyutu ise bilginin sınırlarına ve kozmolojik düzene dair köklü bir zihniyet ayrımına dayanır. İslam düşünce geleneğinde doğa felsefesi iki farklı damar üzerinden yürüyordu: Bir yanda Meraga ve Semerkant matematik okullarının benimsediği, gökyüzünün ölçülebilir, geometrik yollarla incelenebilir olduğunu savunan rasyonel-gözlemci yaklaşım; diğer yanda kelâmcıların ve fıkıh merkezli ulemanın savunduğu, evrenin mutlak kader ve ilahi irade dairesinde anlaşılabileceği, insan aklının aşkın sırları ölçüm aletleriyle kuşatamayacağı yönündeki temkinli tavır.
+
+Gök kürelerini gözlemek, dönemin muhafazakâr epistemolojisinde meşru sınırları aşma teşebbüsü olarak kodlandı. Yeryüzündeki salgınlar, siyasi istikrarsızlıklar ve ordu kayıpları, doğanın kendi iç işleyişinden ziyade gökyüzünü "gözetleyen" insan cüretine verilmiş ilahi cezalar olarak yorumlandı. Rasathanenin fiziki yıkımı, doğayı araçlarla ölçerek anlamlandırma metodolojisinin, doğayı sembolik ve ilahi uyarılar dizgesi olarak gören metafizik kozmoloji anlayışı karşısında siyasi korumadan yoksun kalışının somutlaşmış biçimiydi.
+
+Takiyüddin'in başlattığı gözlem programının yarıda kalması ve araçlarının parçalanması, Osmanlı bilim havzasında matematiksel astronominin kurumsal devamlılığına ağır bir darbe vurdu. Takiyüddin çalışmalarını kişisel imkânlarıyla sürdürmeye gayret etti ve gözlem kayıtlarını içeren *Sidretü Müntehe'l-Efkâr* gibi eserlerini tamamladı; ancak Osmanlı coğrafyasında devlet eliyle desteklenen benzer ölçekli bir rasathane girişimi için 19. yüzyılın ikinci yarısındaki Rasathane-i Âmire'ye kadar beklemek gerekecekti.
+
+Kaynaklar
+
+* [Aydin Sayili - The Observatory in Islam and Its Place in the General History of the Observatory](https://openlibrary.org/books/OL5917822M/The_observatory_in_Islam)
+* [İhsan Fazlıoğlu - Taqī al-Dīn Abū Bakr Muḥammad ibn Zayn al-Dīn Maʿrūf al-Dimashqī al-Ḥanafī | The Biographical Encyclopedia of Astronomers](https://islamsci.mcgill.ca/RASI/BEA/Taqi_al-Din_BEA.htm)
+* [TDV İslâm Ansiklopedisi - Takıyyüddin er-Râsıd](https://islamansiklopedisi.org.tr/takiyyuddin-er-rasid)
+* [Ekmeleddin İhsanoğlu - Osmanlılar ve Bilim: Miras, Karşılaşmalar ve Değişim](https://www.worldcat.org/title/osmanlilar-ve-bilim-miras-karsilasmalar-ve-degisim/oclc/55949512)
