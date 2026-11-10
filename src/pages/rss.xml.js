@@ -21,7 +21,7 @@ export async function GET(context) {
     // Projenizin site URL'si (astro.config.mjs dosyanızdaki 'site' ayarından gelir)
     site: context.site,
 
-    // YENİ: rss etiketi içine W3C'nin istediği atom isimlendirmesini ekliyoruz
+    // rss etiketi içine W3C'nin istediği atom isimlendirmesi
     xmlns: {
       atom: "http://www.w3.org/2005/Atom",
     },
@@ -39,9 +39,15 @@ export async function GET(context) {
       
       // Makale linki (id'den .md uzantısını SEO için temizlediğimiz yapı)
       link: `/icerikler/${icerik.id.replace('.md', '')}/`,
+      
+      // KRİTİK EKLENTİ: Nuelink (Instagram) için görselin RSS'e dahil edilmesi. 
+      // Markdown içindeki 'image' alanını mutlak (absolute) URL'ye çeviriyoruz.
+      customData: icerik.data.image 
+        ? `<enclosure url="${new URL(icerik.data.image, context.site).href}" type="image/jpeg" length="0" />` 
+        : '',
     })),
     
-    // RSS dilini Türkçe olarak ayarla ve YENİ: atom:link (self referans) etiketini ekle
+    // RSS dilini Türkçe olarak ayarla ve atom:link (self referans) etiketini ekle
     customData: `
       <language>tr-tr</language>
       <atom:link href="${context.site}rss.xml" rel="self" type="application/rss+xml" />
